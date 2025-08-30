@@ -1,0 +1,46 @@
+<!Doctype html>
+<!--
+Student name: Elizabeth Ahart
+FileName:Template
+Todays Date 8/29/2025
+-->
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>WILD RESCUE: TEMPLATE</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>&#128062; Wild Rescues</h1>
+            <h3>
+                Rescue&#9679;&nbsp;Rehabilitate&#9679;&nbsp;Release&#9679;&nbsp;
+            </h3>
+        </header>
+        <nav>
+           <p> Home &nbsp;&#9672;&nbsp; About Us&nbsp;&#9672;&nbsp; Partnership&nbsp;&#9672;&nbsp;Gallery&nbsp;&#9672;&nbsp;FAQ&nbsp;&#9672;&nbsp;Contact
+            </p>
+
+        </nav>
+        <main>
+            <!--USE THE MAIN AREA TO ADD CONTENT TO THE WEBPAGE-->
+
+        </main>
+
+    </body>
+        <footer>
+            <p>
+                &copy; Copyright 2021 All Rights Reserved.</p>
+                <p>Contact <WildRescues class="net"></WildRescues></p>
+            </p>
+        </footer>
+    
+
+
+
+
+
+
+
+
+</html>
