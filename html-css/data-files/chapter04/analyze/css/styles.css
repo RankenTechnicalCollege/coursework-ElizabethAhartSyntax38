@@ -3,6 +3,8 @@
 CHapter 4 analyze
 */
 
+/*css reset*/
+
 body,header,main,nav,footer {
     margin: 0;
     padding: 0;
@@ -10,26 +12,38 @@ body,header,main,nav,footer {
 
 }
 
-#css1{
-    width: 30%;
-    float: left;
+#css1   {
+     margin: 25% 25%;
+    width: 25%;
+    float:left;
     padding: 0 1%;
     max-width: 100%;
+    text-align: center;
+    border: #47476b solid;
+   
 }
 
- #css2{
-  width: 30%;
-    float: left;
+ #css3  {
+     margin: 25% 25%;
+    width: 25%;
+    float:left;
     padding: 0 1%;
     max-width: 100%;
- } 
-
- #css3 {
-  width: 30%;
-    float: left;
-    padding: 0 1%;
-    max-width: 100%;
+    text-align: center;
+     border: #47476b solid;
  }
+ 
+ #css2 {
+    margin: 25% 25%;
+    width: 25%;
+    float:left;
+    padding: 0 1%;
+    max-width: 100%;
+    text-align: center;
+     border: #47476b solid;
+    
+}
+
  /*body,header,nav,main style rules*/
 
 body {
@@ -37,14 +51,13 @@ body {
     background-color: #d1d1e0;
 } 
 
-
-
-header h1 {
+h1 {
+    
     font-size: 3em;
     font-family: Georgia, Times, serif;
     padding: 3%;
-    color: #47476b;
-    text-align: center;
+    font-style: color #47476b;
+    text-align : center;
 } 
 
 nav {
@@ -52,7 +65,6 @@ nav {
 } 
 
 /* nav list style rules*/
-
 nav ul {
      margin: 0;
 } 
@@ -79,7 +91,7 @@ main h3 {
     font-size: 2em;
 }
 main a  {
-    color: #47476b;
+   font-style:  color #47476b;
 }
 
 /*footer style rules*/
