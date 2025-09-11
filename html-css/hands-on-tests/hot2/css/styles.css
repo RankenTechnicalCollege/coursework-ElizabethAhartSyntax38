@@ -1,0 +1,52 @@
+/*css styles reset*/
+body,header,main,nav,footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*body styles*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*header styles*/
+header {
+    background-color:darkblue;
+    padding: 30px;
+    margin: 20%;
+    border: solid black;
+}
+
+/*styles for Nav*/
+nav ul a {
+    list-style: none;
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: italic;
+}
+img {
+    max-width: 100%;
+    float: left;
+}
+main {
+    clear: left;
+}
+.menu-item {
+    border: solid black;
+    padding: 50px;
+}
+.action {
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
