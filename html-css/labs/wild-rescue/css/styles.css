@@ -5,7 +5,7 @@ Date: 9/07/2025
 
 /* css reset*/
 
-body,header,nav,main,footer,img,h1,h3 {
+body,header,nav,main,footer,img,h1,h3,ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,7 +20,22 @@ img {
     max-width: 100%;
     display: block;
 }
+/*Style rules for mobile viewport*/
+.mobile {
+    display: block;
+    
+}
+.tablet-desk {
+    display: none;
+}
 
+
+/*Style rules for header area*/
+
+.mobile h1,h3 {
+    padding: 2%;
+    text-align: center;
+}
 /*Style rule for Navigation area*/
 nav {
     background-color: #2a1f14;
@@ -28,15 +43,16 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0%;
     text-align: center;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
     font-family: Geneva,Arial, sans-serif;
     font-weight: bold;
+    border-top: solid 0.5px;
+    color: #f6eee4;
 }
 
 nav li  a {
@@ -46,10 +62,11 @@ nav li  a {
     text-decoration: none;
 }
 
+
 /*Style rules for main content*/
 main {
     padding: 2%;
-    font-family: verdana,Arial,sans-serif;
+    font-family: 'Lora';font-size: 22px;
 }
 
 main p {
@@ -76,9 +93,32 @@ main ul {
     font-weight: bold;
     text-align: center;
 }
+.round {
+    border-radius: 6px;
+}
+#info ul {
+    margin-left: 10%;
+}
 
 #contact {
     text-align: center;
+}
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+.tel-link a {
+    color:  #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mobile h1 {
+     font-family: 'Emblema One';font-size: 22px;
+}
+.mobile h3 {
+    font-family: 'Lora';font-size: 22px;
 }
 
 /* Style rules for footer content*/
