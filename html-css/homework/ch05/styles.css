@@ -5,6 +5,9 @@ header,body,nav,ul,main,footer {
     padding: 0;
     border: 0;
 }
+header {
+    background-color: green;
+}
 
 /*style rules for footer*/
 footer {
@@ -35,6 +38,9 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     background-color: green;
+    padding: 50%;
+    border:black;
+    margin: 20%;
     
 }
 .vertical-menu {
@@ -70,6 +76,7 @@ main li {
 }
 h3 {
     color: blue;
+    background-color: green;
 }
 
 p {
