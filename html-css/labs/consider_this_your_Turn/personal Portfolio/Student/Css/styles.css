@@ -5,9 +5,15 @@ Consider this your turn*/
 /*css reset*/
 header,main,nav,body,footer {
     margin: 0;
-    padding:0%;
-    border: o;
+    padding:0;
+    border: 0;
 }
+
+/*hide tab and desk*/
+.tablet-desk {
+  display: none;
+}
+/* styles for  body*/
 
 body {
     display: block;
@@ -17,10 +23,15 @@ image {
     max-width: 100%;
     display: block;
 }
+.round {
+  border-radius: 8px;
+  
+}
 
 header {
     color: black;
     text-align: center;
+    font-family: 'Agbalumo';font-size: 22px;
 
 }
 /* Add a black background color to the top navigation */
@@ -37,6 +48,15 @@ header {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+nav ul{
+  list-style: square;
+}
+nav li {
+list-style-image: -moz-linear-gradient(#653939);
+}
+nav a hoover {
+    color: #ffa500;
 }
 
 /* Change the color of links on hover */
@@ -58,6 +78,7 @@ ul {
   list-style: none; /* Remove list bullets */
   padding: 0;
   margin: 0;
+ font-family: 'Agbalumo';font-size: 22px;
 }
 
 li {
@@ -88,11 +109,17 @@ li::before {
 .header {
   padding: 20px;
   text-align: center;
-  background: #1abc9c;
   color: white;
   font-size: 20px;
 }
 
 h1 {
     text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h2 #joy,#hearts,#circles {
+  list-style: square;
+  color:#653939 ;
 }
