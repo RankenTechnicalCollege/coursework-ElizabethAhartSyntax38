@@ -65,7 +65,7 @@ nav li  a {
 
 /*Style rules for main content*/
 main {
-    padding: 2%;
+    padding: 2em;
     font-family: 'Lora';font-size: 22px;
 }
 
@@ -74,7 +74,7 @@ main p {
 }
 
 main h3 {
-    padding-top: 2%;
+    padding-top: 2em;
 }
 
 main ul {
@@ -103,9 +103,9 @@ main ul {
 #contact {
     text-align: center;
 }
-.tel-link {
+.tel-link { 
     background-color: #2a1f14;
-    padding: 2%;
+    padding: 2em;
     width: 80%;
     margin: 0 auto;
 }
@@ -127,9 +127,74 @@ footer {
     font-size: 0.85em;
     background-color: #4d3319;
     color:#f6eee4;
-    padding: 1% 0%;
+    padding: 1em 0em;
 }
 footer a {
     color: #f3e6d8;
     text-decoration: none;
+}
+/*Media Query for tablet viewport*/
+
+@media screen and(min-width:620px),print {
+    /*tablet view port show tab-desk class hide mobile class*/
+    .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    
+    /*Table viewport styles for nav area*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+
+    nav li a {
+        padding: 0.5em;
+    }
+}
+/*Media Query for desktop viewport */
+@media screen and(min-width:1000px),print {
+    /*Desktop view port style rules for nav area*/
+    nav li {
+    font-size: 1.5em;
+    }
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+    nav li a :hover {
+        color: #2a1f14;
+        background-color: #f6eee4;
+
+    }
+    /*Desktop Viewport: Style rules for main content*/
+
+    #info ul {
+        margin-left: 5%;
+    }
+ 
+}
+   /*Media Query for Large Desktop Viewports*/
+    @media screen and(min-width:1921px) {
+        body {
+            background: linear-gradient(#f6eee4,#78593a);
+        }
+        #wrapper {
+            width: 1920px;
+            margin: 0 auto;
+        }
+        main {
+            background-color: #f6eee4;
+        }
+        
+    } 
+/*Media Query for print*/
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
 }
