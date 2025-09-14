@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author:Elizabeth Ahart
+Date:9/14/2025
+File Name: Apply css ch6
 */
 
 /* CSS Reset */
@@ -13,7 +13,7 @@ body, header, nav, main, footer, h1, div, article, h2 {
 
 /* Style rules for body */
 body {
-	background-color: #fe9972;
+	background: linear-gradient(to left,#fe9972,#ffe5dc);
 }
 
 /* Style rules for mobile viewport */
@@ -44,4 +44,42 @@ footer {
 	font-size: .70em;
 	text-align: center;
     color: #341509;
+}
+/*Media Query for tablet Viewport*/
+@media print and (min-width: 481px) {
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #000;
+        background-color: white;
+    }
+    nav,
+    footer {
+        display: none;
+        clear: left;
+
+    }
+    a {
+        text-decoration: none;
+        float: left;
+        width: 43%;
+        height: 160px;
+    }
+}
+@media only screen and (min-width:900px) {
+    body {
+         
+        color: #000;
+        background-color: white;
+    }
+
+    article {
+        width: 27%;
+        height: 140px;
+    }
+
+    a :hover {
+        background-color: #ffe5dc;
+        color: #a22c02;
+    }
+      
 }
