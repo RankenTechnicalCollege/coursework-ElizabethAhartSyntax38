@@ -9,9 +9,13 @@ header,body,nav,ul,main,footer {
 /*style rules for footer*/
 footer {
     border: solid black;
-    font-family:"Crimson+Pro:ital@0;1&family=Libertinus+Keyboard&display=swap')";
     font-size: 16px;
     font-weight: bold;
+}
+.libertinus-keyboard-regular {
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*styles for viewport*/
