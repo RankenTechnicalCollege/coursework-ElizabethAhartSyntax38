@@ -1,0 +1,89 @@
+/*css reset*/
+
+header,body,nav,ul,main,footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*style rules for footer*/
+footer {
+    border: solid black;
+    font-family:"Crimson+Pro:ital@0;1&family=Libertinus+Keyboard&display=swap')";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*styles for viewport*/
+.tablet-desk {
+    display: none;
+}
+
+/*styles for body*/
+
+body{
+    background-color: bisque;
+}
+
+/*styles for navigation*/
+nav {
+    
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: green;
+    
+}
+.vertical-menu {
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a hoover {
+    background-color:yellow ;
+    font-size: 18px;
+
+}
+
+/*styles for main*/
+main ul {
+    list-style: square;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 25% auto;
+    padding: 60%;
+
+}
+main li {
+     list-style: square;
+    text-align: center;
+    text-decoration: none;
+}
+h3 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+.round {
+    border-radius: 8px;
+}
+/*image styles*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+    text-align: left;
+  }
+}
