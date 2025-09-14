@@ -1,7 +1,7 @@
 /*
-    Student Name
-	File Name: 
-	Current Date: 
+    Student Name: Elizabeth Ahart
+	File Name: correct and improve ch6
+	Current Date: 9/14/25
 */
 
 /* CSS reset */
@@ -13,7 +13,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 
 /* Style rule for body and images */
 body {
-    background-color: #e5e0fa;
+    background: linear-gradient(#efe0fa,#29157e);
 }
 
 img {
@@ -93,21 +93,32 @@ footer {
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px), print {
- 
+
+    /*styles for header*/
+    header {
+        width:25%;
+         float: left;
+    }
+    .col-content {
+        width: 30%;
+        float: left;
+        padding: 1.5%;
+    }
+
     /* Desktop Viewport: Style rules for nav */
     nav li {
         border-radius: 0;
     }
 
     nav li a {
-        display: inline-block;
+        display: block;
         padding: 0.7em;
     }
 
     /* Desktop Viewport: Style rules for the main content */
     main {
         border-style: none;
-        margin-bottom: 1em 0;
+        margin-bottom: 1em;
         overflow: auto;
     }
 
@@ -115,5 +126,22 @@ footer {
     footer {
         clear: left;
     }
+  /* tab-desk styles*/
 
+ .tablet-desk {
+    display:inline-block;
+  }
 }
+/*Media query for large viewport */
+@media screen and (min-width: 1441px) {
+   
+}
+    
+
+
+
+
+ 
+  
+     
+    
