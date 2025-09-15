@@ -53,7 +53,7 @@ nav ul{
   list-style: square;
 }
 nav li {
-list-style-image: -moz-linear-gradient(#653939);
+list-style-image: none;
 }
 nav a hoover {
     color: #ffa500;
@@ -123,3 +123,65 @@ h2 #joy,#hearts,#circles {
   list-style: square;
   color:#653939 ;
 }
+/*styles for viewport tab-desk*/
+
+@media screen and (min-width: 550px) ,print {
+    /*Tablet viewPort: show tab-desk class, hide mobile class*/
+    .tab-desk {
+        display: block;
+
+    }
+    .mobile {
+        display: none;
+    }
+    /*Tablet viewport styles for header*/
+    span.tab-desk {
+        display: inline;
+    }
+    /*Tablet viewport : style rules for nav area*/
+
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+    nav li  a :last-child {
+        border-right:none;
+        }
+    nav li a {
+       padding: 0.25px 0.5px;
+        }
+       
+    
+}
+/*Media query for Desktop view port*/
+
+@media  screen and(min-width: 769px) ,print {
+    span.tablet-desk {
+        display: inline;
+    }
+    header {
+        padding:2px;
+
+    }
+    /*Desktop Viewport: Style rules for nav area*/
+
+    nav li a {
+        padding: 0.5px 1.25px;
+
+    }
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e9fc;
+    }
+    /*Desk-top viewport style rules for main content */
+    #info ul {
+        margin-left: 5%;
+
+    }
+    main h3 {
+        font-size: 1.5em;
+
+    }
+  }
