@@ -65,7 +65,7 @@ main ul {
     list-style: square;
     text-align: center;
     text-decoration: none;
-    margin-top: 25% auto;
+    margin: 25px auto;
     padding: 60%;
 
 }

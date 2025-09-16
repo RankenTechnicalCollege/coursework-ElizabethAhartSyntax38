@@ -48,7 +48,7 @@ body {
 /* absolute */
 .absolute {
     position:absolute;
-    bottom: 5;
-    right: 30;
+    bottom: 5%;
+    right: 30%;
 }
 
