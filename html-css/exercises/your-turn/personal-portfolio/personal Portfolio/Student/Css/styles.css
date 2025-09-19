@@ -3,7 +3,7 @@
 Consider this your turn*/
 
 /*css reset*/
-header,main,nav,body,footer {
+header,main,nav,body,footer,figure,figcaption,section {
     margin: 0;
     padding:0;
     border: 0;
@@ -32,12 +32,28 @@ header {
     color: black;
     text-align: center;
     font-family: 'Agbalumo';font-size: 22px;
-
 }
+/*added styles to section headers*/
+section {
+  display: block;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+  box-sizing: border-box;
+}
+section h2 {
+  font-weight: bolder;
+  background:linear-gradient(#653939,#373684,#ddd,0.5);
+}
+figcaption {
+  display: block;
+  text-shadow: 2px 2px #292933;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
+  display: block;
 }
 
 /* Style the links inside the navigation bar */
