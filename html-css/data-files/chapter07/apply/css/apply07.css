@@ -1,11 +1,11 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Elizabeth Ahart
+Date:9/18/25
+File Name: Apply ch7
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div {
+body, header, nav, main, footer, h1, div,section,article,aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -56,12 +56,36 @@ footer {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
-    
+    section {
+		background-color: #183440;
+		color: #fff;
+		margin-top: 1%;
+		padding: 2%;
+	}
+	article {
+		margin-top: 1%;
+		padding: 2%;
+	}
+	aside {
+		background-color: rgba(24, 52, 64, 0.3);
+		color: #183440;
+		margin-top: 1%;
+		padding: 2%;
+		box-shadow: 4px 4px 10px #183440;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+	}
     
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
-
+.grid {
+	grid-template-columns: auto auto auto auto;
+}
+aside {
+	grid-column: 1/span 4;
+}
     
 }
