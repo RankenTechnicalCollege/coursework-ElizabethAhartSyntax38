@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Elizabeth Ahart
+Date: 9-19-25
+File Name: Extend ch7
 */
 
 /* CSS Reset */
@@ -29,6 +29,12 @@ header {
 /* Style rules for main content  */
 main {
 	background-color: #fff;
+}
+/*styles for section*/
+section {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue;
 }
 
 aside {
