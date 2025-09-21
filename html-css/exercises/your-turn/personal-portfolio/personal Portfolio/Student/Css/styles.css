@@ -42,7 +42,7 @@ section {
 }
 section h2 {
   font-weight: bolder;
-  background:linear-gradient(#653939,#373684,#ddd,0.5);
+  background:linear-gradient(#653939,#373684,#ddd);
 }
 figcaption {
   display: block;
@@ -141,11 +141,10 @@ h2 #joy,#hearts,#circles {
 }
 /*styles for viewport tab-desk*/
 
-@media screen and (min-width: 550px) ,print {
+@media screen and (min-width: 550px), print {
     /*Tablet viewPort: show tab-desk class, hide mobile class*/
     .tab-desk {
         display: block;
-
     }
     .mobile {
         display: none;
@@ -163,17 +162,15 @@ h2 #joy,#hearts,#circles {
         border-right: 1px solid #e5e9fc;
     }
     nav li  a :last-child {
-        border-right:none;
+        border:0;
         }
     nav li a {
        padding: 0.25px 0.5px;
-        }
-       
-    
+    }  
 }
 /*Media query for Desktop view port*/
 
-@media  screen and(min-width: 769px) ,print {
+@media  screen and(min-width: 769px), print {
     span.tablet-desk {
         display: inline;
     }
@@ -189,7 +186,7 @@ h2 #joy,#hearts,#circles {
     }
     nav li a:hover {
         color: #373684;
-        background-color: #e5e9fc;
+        background: #e5e9fc;
     }
     /*Desk-top viewport style rules for main content */
     #info ul {
@@ -200,4 +197,5 @@ h2 #joy,#hearts,#circles {
         font-size: 1.5em;
 
     }
-  }
+  
+}

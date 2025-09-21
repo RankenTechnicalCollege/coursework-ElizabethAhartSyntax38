@@ -1,0 +1,112 @@
+/*
+Author: Elizabeth Ahart
+Date:9-20-25
+File Name: Apply ch08
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+/*Style rules for table*/
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+.Monday {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid black;
+    text-align: center;
+    padding: 2%;
+    box-shadow: 5px 10px #7188bb;
+    
+}
+.Tuesday {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid black;
+    text-align: center;
+    padding: 2%;
+}
+.Wednesday {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid black;
+    text-align: center;
+    padding: 2%;
+    box-shadow: 5px 10px #7188bb;
+    
+}
+.Thursday {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid black;
+    text-align: center;
+    padding: 2%;
+  
+}
+.Friday {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid black;
+    text-align: center;
+    padding: 2%;
+   
+}
+.weekend {
+	max-width: 100%;
+	margin: 0 auto;
+	border: 3px solid black;
+    text-align: center;
+    padding: 4%;
+    
+}
+/*style rules for table*/
+table,tr,th,td {
+	border-collapse: collapse;
+    max-width: 100%;
+    border: 5px solid black;
+	
+}
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin: 2%;
+}
+th,td {
+	border: 1px solid #7188bb;
+}
+td {
+	text-align: center;
+     text-align: center;
+}
+tr:nth-child(odd) {
+	background-color: #ccc;
+
+}

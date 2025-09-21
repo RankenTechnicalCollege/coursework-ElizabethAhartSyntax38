@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Elizabeth Ahart
+Date:9-20-25
+File Name: Apply ch08
 */
 
 /* CSS Reset */
@@ -26,4 +26,31 @@ body {
 footer {
 	font-size: .70em;
 	text-align: center;
+}
+/*Style rules for table*/
+
+.Tablets {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid #71881b;
+}
+/*style rules for table*/
+table,tr,th,td {
+	border-collapse: collapse;
+	padding: 2%;
+}
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin: 2%;
+}
+th,td {
+	border: 1px solid #7188bb;
+}
+td {
+	text-align: center;
+}
+tr:nth-child(odd) {
+	background-color: #d3e788;
+
 }
