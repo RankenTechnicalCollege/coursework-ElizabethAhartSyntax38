@@ -21,6 +21,12 @@ img {
 * {
     box-sizing: border-box;
 }
+p {
+    display: block;
+    border-bottom: #000;
+    padding: auto;
+    margin:0 auto;
+}
 
 /* styles for mobile viewport*/
 

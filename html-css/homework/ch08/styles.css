@@ -1,0 +1,104 @@
+/*
+Author: Elizabeth Ahart
+Date:9-21-25
+File Name: Homework ch08
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+/*Style rules for table*/
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+	background: linear-gradient(to top right, #fff 0%, #6699ff 100%) no-repeat fixed center;
+    font-family: Geneva, Arial, sans-serif;
+}
+
+
+/* Style rules for form elements */
+fieldset {
+	box-sizing: border-box;
+	padding: 4%;
+    display: block;
+}
+#info {
+    float: left;
+    
+}
+
+
+/* Style for the footer element */
+footer {
+	font-size: .9em;
+	text-align: center;
+}
+/*styles for mobil viewport*/
+fieldset,input {
+	margin-bottom: 2%;
+    display: inline-block;
+}
+
+legend {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+.btn {
+	border: none;
+	margin: 0 auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: #fff;
+}
+.reset {
+    border: none;
+	margin: 0 auto;
+	padding: 5%;
+	background-color: red;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: #fff;
+    display: block;
+    
+   
+
+}
+
+/* Media query for tablet layout */ 
+@media only screen and (min-width: 600px) {
+	form {
+		width: 80%;
+		margin: 0 auto;
+
+	}
+	.btn {
+		grid-column: 1 / span 2;
+		padding: 3%;
+	}
+    
+} 
