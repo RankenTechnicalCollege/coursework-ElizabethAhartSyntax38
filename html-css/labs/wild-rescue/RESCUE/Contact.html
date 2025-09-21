@@ -9,7 +9,7 @@ Todays Date 8/31/2025
     <head>
         <title>WILD RESCUE: Contact</title>
         <meta charset="utf-8">
-        <link rel="Stylesheet" href="styles.css">
+        <link rel="Stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -47,6 +47,40 @@ Todays Date 8/31/2025
                 <p class="link">Address: 8989 Rescue Drive Ocala,Florida 34471</p>
                 <iframe src="https://mapq.st/3zD7hON" title="Ocala"></iframe>
 
+            </div>
+            <div id="form">
+                <h2>Complete the form below and we will contact you soon.</h2>
+                <form class="form-grid"><!--start form-->
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+
+                    <label for="BName">Business name</label>
+                    <input type="text" name="BName" id="BName">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                         <p>I am interested in:</p>
+                    <label for="Vol"><input type="radio" name="info" id="Vol" value="Volunteering">Volunteering </label>
+                    <label for="Sponsor"><input type="radio" name="info" id="Sponsor" value="Sponsorship opportunities">Sponsorship opportunities</label>
+                    <label for="Wild"><input type="radio" name="info" id="wild" value="Wildlife">Wildlife</label>
+                    <label for="other"><input type="radio" name="info" id="other" value="other">Other, Pleas specify below</label>
+                    </fieldset>
+                    <label for="Questions">What Questions do you have for us?</label>
+                    <textarea name="Questions" id="Questions" rows="5" cols="35"></textarea>
+                     <button type="submit" id="submit" value="submit" class="btn">submit</button>
+                </form>
             </div>
             <!--USE THE MAIN AREA TO ADD CONTENT TO THE WEBPAGE-->
 

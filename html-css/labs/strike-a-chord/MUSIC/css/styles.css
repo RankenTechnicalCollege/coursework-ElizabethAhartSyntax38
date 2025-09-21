@@ -103,6 +103,10 @@ main p {
 #contact {
     text-align: center;
 }
+#rental h2 {
+    text-align: center;
+
+}
 
 #contact .email-link {
    
@@ -133,7 +137,25 @@ main p {
    width: 95px;
    height: 50%;
 }
-
+/*Style rules for form element*/
+fieldset,input {
+    margin: 2%;
+}
+legend {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+label {
+    display: block;
+    padding: 3%;
+}
+#submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+}
 /* Style rules for footer content*/
 footer {
     text-align: center;
@@ -178,6 +200,39 @@ footer a {
             width: 500px;
             height: 450px;
         }
+        /*table viewport style rules for form element*/
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+        /*Style rules for table*/
+        table {
+            border: 1px solid #373684;
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 100%;
+        }
+        caption {
+
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1%;
+        }
+        th,td {
+            border: 1px solid #373684;
+            padding: 2%;
+        }
+        th {
+            background-color: #373684;
+            color: #fff;
+            font-size: 1.15em;
+
+
+        }
+        tr:nth-child(odd) {
+            background-color: #b7b7e1;
+
+        }
         aside {
             text-align: center;
             font-size: 1.5em;
@@ -216,7 +271,7 @@ footer a {
 
 }
 /*Media query for Desktop view port*/
-@media  screen and(min-width:769px) ,print {
+@media  screen and (min-width:769px) ,print {
     span.tab-desk {
         display: inline;
     }
@@ -259,6 +314,20 @@ footer a {
         aside {
             grid-column: 1/span 4;
         }
+        /*Desktop viewport style rules for table*/
+        table {
+            width: 70%;
+        }
+        /*Desktop styles for form element*/
+        .form-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+        }
+        .btn {
+            grid-column: 1 / span 2;
+        }
+
     }
 /*Media query for print*/
 

@@ -11,12 +11,46 @@ header,main,nav,body,footer,figure,figcaption,section {
 
 /*hide tab and desk*/
 .tablet-desk {
-  display: none;
+  display:block;
 }
+table {
+  border: 2px;
+  border-collapse: collapse;
+}
+/*Style rules for mobile viewport*/
+.mobile {
+    display: block;
+    
+}
+.tel-link { 
+    background-color: #2a1f14;
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+  }
 /* styles for  body*/
 
 body {
     display: block;
+}
+/*Style rules for form element*/
+fieldset,input {
+    margin: 2%;
+}
+legend {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+label {
+    display: block;
+    padding: 3%;
+}
+#submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
 }
 
 image {
@@ -139,6 +173,9 @@ h2 #joy,#hearts,#circles {
   list-style: square;
   color:#653939 ;
 }
+table {
+  display:block;
+}
 /*styles for viewport tab-desk*/
 
 @media screen and (min-width: 550px), print {
@@ -152,6 +189,9 @@ h2 #joy,#hearts,#circles {
     /*Tablet viewport styles for header*/
     span.tab-desk {
         display: inline;
+    }
+    table {
+      display: block;
     }
     /*Tablet viewport : style rules for nav area*/
 
@@ -167,10 +207,16 @@ h2 #joy,#hearts,#circles {
     nav li a {
        padding: 0.25px 0.5px;
     }  
+      .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
 }
 /*Media query for Desktop view port*/
 
-@media  screen and(min-width: 769px), print {
+@media  screen and (min-width: 769px), print {
     span.tablet-desk {
         display: inline;
     }
@@ -197,5 +243,17 @@ h2 #joy,#hearts,#circles {
         font-size: 1.5em;
 
     }
+    table {
+      display:block;
+    }
+      .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+     body {
+            background: linear-gradient(#f6eee4,#78593a);
+        }
   
 }

@@ -135,7 +135,7 @@ footer a {
 }
 /*Media Query for tablet viewport*/
 
-@media screen and(min-width:620px),print {
+@media screen and (min-width:620px),print {
     /*tablet view port show tab-desk class hide mobile class*/
     .tab-desk {
         display: block;
@@ -156,7 +156,7 @@ footer a {
     }
 }
 /*Media Query for desktop viewport */
-@media screen and(min-width:1000px),print {
+@media screen and (min-width:1000px),print {
     /*Desktop view port style rules for nav area*/
     nav li {
     font-size: 1.5em;
@@ -177,7 +177,7 @@ footer a {
  
 }
    /*Media Query for Large Desktop Viewports*/
-    @media screen and(min-width:1921px) {
+    @media screen and (min-width:1921px) {
         body {
             background: linear-gradient(#f6eee4,#78593a);
         }

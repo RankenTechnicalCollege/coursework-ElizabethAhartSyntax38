@@ -8,7 +8,7 @@ Todays Date: 08/31/2025
     <head>
         <title>STRIKE A CHORD CONTACT</title>
          <meta charset="utf-8">
-         <link rel="styles" href="css/styles.css">
+         <link rel="stylesheet" href="css/styles.css">
           <link href="https://fonts.googleapis.com/css?family=DMSerifDisplay" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=RobotoCondensed" rel="stylesheet">
     </head>
@@ -45,6 +45,35 @@ Todays Date: 08/31/2025
             <p class="tab-desk">(814)-555-9228</p>
             <p class="email-link">EMAIL <a href="mailto:lessons@strikeachord.net">Email link Contact US</a></p>
 
+        </div>
+        <div id="form">
+            <h2>Complete the form below and one of our staff members will contact you.</h2>
+            <form class="form-grid">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Musical Interest</legend>
+                    <p>I am interested in:</p>
+                    <label for="Guitarles"><input type="checkbox" name="interest" id="Guitarles" value="Guitar Lessons">Guitar-Lessons </label>
+                    <label for="pianoles"><input type="checkbox" name="interest" id="pianoles" value="Piano lessons">Piano-lessons</label>
+                    <label for="violinles"><input type="checkbox" name="interest" id="violinles" value="violin lessons">Violin Lessons</label>
+                    <label for="rent"><input type="checkbox" name="interest" id="rent" value="rental equipment">Rental-Equipment</label>
+                </fieldset>
+                <button type="submit" id="submit" value="submit" class="btn">submit</button>
+            </form>
         </div>
 
     </main>

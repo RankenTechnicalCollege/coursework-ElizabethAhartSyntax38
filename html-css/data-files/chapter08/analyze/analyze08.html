@@ -1,28 +1,55 @@
 <!DOCTYPE html>
-<!-- Student's Name, Today's Date -->
+<!-- Student's Name: Elizabeth Ahart, Today's Date 9-20-25-->
 <html lang="en">
 <head>
-	<title>Form Example</title>
+	<title>Form Example Extend08</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles08.css">
 </head>
 <body>
 
 	<div id="container">
 
         <!-- Use the main area to add the main content of the webpage -->
-        <main>
+    <main>
 
-<form class="grid"><input type="text" name="fName" id="fName"><input type="text" name="lName" id="lName"><input type="email" name="email" id="email"><input type="tel" name="phone" id="phone"><input type="text" name="cName" id="cName"><input type="number" name="cNum" id="cNum"><input type="text" name="expDate" id="expDate" placeholder="MM/YY"><input type="number" name="ccv" id="ccv"></form>
+    <form class="grid">
+        <fieldset>
+            <legend>account Information</legend>
+        <label for="fName">FirstName</label>
+        <input type="text" name="fName" id="fName">
+        <label for="lName">LastName</label>
+        <input type="text" name="lName" id="lName">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="phone">Phone-Number</label>
+        <input type="tel" name="phone" id="phone">
+        </fieldset>
 
-</main>
+        <fieldset>
+            <legend>Payment Information</legend>
+        <label for="cName">Name-On-Card</label>
+        <input type="text" name="cName" id="cName">
+        <label for="cNum">CardNumber</label>
+        <input type="number" name="cNum" id="cNum">"
+        <label for="expDate">Card-ExpirationDate</label>
+        <input type="text" name="expDate" id="expDate" placeholder="MM/YY">
+        <input type="date" name="expDate1" id="expDate1">
+        <input type="number" name="ccv" id="ccv">
+        <button type="submit" id="submit" value="submit" class="btn">submit</button>
+        </fieldset>
+
+    </form>
+
+    </main>
 
 <!-- Use the footer area to add webpage footer content -->
 <footer>
-    <p>Student's Name, Today's Date</p>
+    <p>Student's Name Elizabeth Ahart, Today's Date</p>
 </footer>
 
 	</div>
-	
+
 </body>
 </html>

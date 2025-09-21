@@ -119,6 +119,9 @@ figcaption {
 #contact {
     text-align: center;
 }
+#form h2 {
+    text-align: center;
+}
 .tel-link { 
     background-color: #2a1f14;
     padding: 2%;
@@ -136,7 +139,27 @@ figcaption {
 .mobile h3 {
     font-family: 'Lora';font-size: 22px;
 }
-
+/*Style rules for form element*/
+fieldset,input,textarea {
+    margin-bottom: 2%;
+}
+legend {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+label {
+    display: block;
+    padding: 2%;
+}
+#submit {
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    background-color: #78593a;
+    color: #f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
 /* Style rules for footer content*/
 footer {
     text-align: center;
@@ -156,7 +179,13 @@ footer a {
     .tab-desk {
         display: block;
     }
+    .desktop {
+        display: block;
+    }
     .mobile {
+        display: none;
+    }
+    .mobile-tablet {
         display: none;
     }
     
@@ -178,6 +207,11 @@ footer a {
     aside {
         grid-column: 1 /span 2;
     }
+    /*Tablet Viewport: Style rule for form element*/
+    form {
+    width: 70%;
+    margin: 0 auto;
+    }
 }
 /*Media Query for desktop viewport */
 @media screen and(min-width:1000px),print {
@@ -192,8 +226,15 @@ footer a {
         color: #2a1f14;
         background-color: #f6eee4;
         opacity: 0.5;
-
     }
+    .desktop {
+        display: block;
+    
+    }
+    .mobile-tablet {
+        display: none;
+    }
+ 
     /*Desktop Viewport: Style rules for main content*/
 
     #info ul {
@@ -207,6 +248,36 @@ footer a {
             grid-column: 1 /span 3;
             font-size: 2em;
         }
+           /*style rules for table*/
+    table {
+        border: 1px solid #2a1f14;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+    th {
+        background-color: #2a1f14;
+        color: #fff;
+        font-size: 1.15em;
+    }
+    tr:nth-child(odd) {
+        background-color:#deccba;
+
+    }
+    /*Desktop Viewport: Style rules for form elements*/
+    form {
+        width: auto;
+    }
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        grid-column: 1 span 2;
+    }
  
 }
    /*Media Query for Large Desktop Viewports*/
