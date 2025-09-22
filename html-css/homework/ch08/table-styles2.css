@@ -57,20 +57,23 @@ table {
 }
 .Zak {
 	width: 8%;
-	margin: 0 auto;
+	margin: auto 0;
 	border: 3px solid black;
-    text-align: center;
-    padding: 2%;
+    text-align:center;
+    padding: 4%;
     box-shadow: 5px 10px #7188bb;
+    font-size:x-small;
     
 }
 .JudyTaylor {
 	width: 8%;
 	margin: 0 auto;
 	border: 1px solid black;
-    text-align: center;
-    padding: 2%;
+    text-align:center;
+    padding: 4%;
     box-shadow: 5px 10px #7188bb;
+    font-size: smaller;
+
   
 }
 .Bethany {
@@ -78,8 +81,10 @@ table {
 	margin: 0 auto;
 	border: 1px solid black;
     text-align:right;
-    padding: 2%;
+    padding: 4%;
     box-shadow: 5px 10px #7188bb;
+    font-size:x-small;
+   
    
 }
 .Kelly {
@@ -89,6 +94,7 @@ table {
     text-align: center;
     padding: 4%;
     box-shadow: 5px 10px #7188bb;
+    font-size: x-small;
     
 }
 .Juliett {
