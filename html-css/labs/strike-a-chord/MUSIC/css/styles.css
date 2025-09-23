@@ -6,7 +6,7 @@ file name: Styles.css
 
 /* css reset*/
 
-body,header,nav,main,footer,image,h1,ul,section,aside,figure,figcaption {
+body,header,nav,main,footer,h1,ul,section,aside,figure,figcaption {
     margin: 0;
     padding: 0;
     border:0;
@@ -26,18 +26,19 @@ p {
     border-bottom: #000;
     padding: auto;
     margin:0 auto;
+    font-size: .5em;
 }
 
 /* styles for mobile viewport*/
 
 .tablet-desk {
-    display: none;
+    display: block;
 }
 /*Style rules for header content */
 
 header {
     text-align: center;
-    font-size: 1.5em;
+    
     color: #373684;
 }
 
@@ -71,46 +72,69 @@ nav li a {
     
  #piano {
         width: 29px;
-        margin: 0% auto;
-        display: inline-block;
+        margin: 20% 0;
+        display:block;
         padding:12%;
         float: left;
         text-align: center;
+       text-decoration: none;
         
     }
     #guitar {
             width: 29px;
-        margin: 0% auto;
+        margin: 20% 0;
         display: block;
         padding: 12%;
         text-align: center;
+       text-decoration: none;
         
     }
 
     #violin {
         width: 29px;
-        margin: 0% auto;
+        margin: 20% 0;
         display: block;
         padding: 12%;
         float: right;
         text-align: center;
+       text-decoration: none;
         
     }
+    #info {
+        padding: 12%;
+        display: block;
+        
+    }
+    #hero {
+        padding: 10%;
+    }
+
     section, h4{
-        display:block;
+        display:grid;
         grid-columns: auto auto auto;
         grid-gap: 12%;
         text-align: center;
+        font-size: medium;
+        margin: 0% auto;
+        box-sizing: border-box;
+        margin: bottom 0;
+   
+
+    
     }
+    h4 {
+        color: purple;
+    }
+
     p {
-        font-size: x-small;
+       
         background:linear-gradient(purple,white,blue);
     }
 
 /*Style rules for main content*/
 main {
     font-family: 'Roboto';font-size: 22px;
-    padding: 2%;
+    padding:2%;
     background-color: #e5e9fc;
     overflow: auto;
      
@@ -341,9 +365,7 @@ footer a {
         font-size: 1.5em;
 
     }
-    #piano,
-    #guitar,
-    #violin {
+    #piano, #guitar, #violin {
         width: 29px;
         float: left;
         margin: 0% 2%;
