@@ -1,0 +1,90 @@
+/*
+Author:Elizabeth Ahart
+Date:9-22-25
+File Name: extend09
+*/
+main,nav,footer,body,h3,fieldset,video,input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style for body specifies a background color */
+body {
+	background: linear-gradient(to top right, #fff 0%, #6699ff 100%) no-repeat fixed center;
+    font-family: Geneva, Arial, sans-serif;
+}
+
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Style rules for form elements */
+fieldset {
+	box-sizing: border-box;
+	padding: 4%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Style for the footer element */
+footer {
+	font-size: .9em;
+	text-align: center;
+}
+/*styles for mobil viewport*/
+fieldset,input {
+	margin-bottom: 2%;
+}
+
+legend {
+	font-size: 1.25em;
+	font-weight: bold;
+    border: 5px solid black;
+}
+.grid {
+    margin: 0 auto;
+    padding: 12%;
+}
+.btn {
+	border: none;
+	margin: 0 auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: #fff;
+}
+video {
+    margin: 0 auto 4%;
+    display: block;
+    padding: 12%;
+    border: 5px solid black;
+    max-width: 100%;
+}
+#video-sample {
+    background-image: linear-gradient(purple, blue,lightgray);
+}
+
+/* Media query for tablet layout */ 
+@media only screen and (min-width: 600px) {
+	form {
+		width: 80%;
+		margin: 0 auto;
+
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+	}
+	.btn {
+		grid-column: 1 / span 2;
+		padding: 3%;
+	}
+    
+} 
