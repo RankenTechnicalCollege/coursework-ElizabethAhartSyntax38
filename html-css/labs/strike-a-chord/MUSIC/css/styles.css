@@ -14,7 +14,7 @@ body,header,nav,main,footer,image,h1,ul,section,aside,figure,figcaption {
 /*styles for images*/
 
 img {
-    max-width: 100%;
+    
     display: block;
 }
 /* style rules for box sizing applies to all elements*/
@@ -68,6 +68,44 @@ nav li a {
     padding: 0.5% 1%;
     text-decoration: none;
 }
+    
+ #piano {
+        width: 29px;
+        margin: 0% auto;
+        display: inline-block;
+        padding:12%;
+        float: left;
+        text-align: center;
+        
+    }
+    #guitar {
+            width: 29px;
+        margin: 0% auto;
+        display: block;
+        padding: 12%;
+        text-align: center;
+        
+    }
+
+    #violin {
+        width: 29px;
+        margin: 0% auto;
+        display: block;
+        padding: 12%;
+        float: right;
+        text-align: center;
+        
+    }
+    section, h4{
+        display:block;
+        grid-columns: auto auto auto;
+        grid-gap: 12%;
+        text-align: center;
+    }
+    p {
+        font-size: x-small;
+        background:linear-gradient(purple,white,blue);
+    }
 
 /*Style rules for main content*/
 main {
