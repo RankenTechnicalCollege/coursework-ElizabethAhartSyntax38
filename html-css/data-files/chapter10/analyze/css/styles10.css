@@ -1,6 +1,6 @@
 /*
-    Author:
-    Date:
+    Author: Elizabeth ahart
+    Date: 9-27-25
     File Name: styles.css
 */
 
@@ -54,6 +54,15 @@ main {
 	border-radius: 6px;
 	background-color: #fff;
 	border: inset 0.2em #7a6d68; 
+}
+/*animation*/
+#placeholder {
+	display: none;
+}
+
+figure {
+	text-align: center;
+	padding: 1em;
 }
 
 footer {

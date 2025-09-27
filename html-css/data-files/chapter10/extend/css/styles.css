@@ -36,4 +36,8 @@ button {
 	color: #fff;
 	font-weight: bold;
 	font-size: 1em;
+	
+}
+.promo {
+	display: none;
 }
