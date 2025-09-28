@@ -1,6 +1,6 @@
 /* Author: Elizabeth Ahart
 File name: rescue ch4 lab2
-Date: 9/07/2025
+Date: 9/28/2025
 */
 
 /* css reset*/
@@ -25,7 +25,10 @@ img, video {
     display: block;
     
 }
-.tablet-desk {
+.tab-desk, #nav-links {
+    display: none;
+}
+.desktop {
     display: none;
 }
 
@@ -35,33 +38,34 @@ img, video {
 .mobile h1,h3 {
     padding: 2%;
     text-align: center;
+    margin: 2% o o 3%;
 }
 /*Style rule for Navigation area*/
 nav {
     background-color: #2a1f14;
 }
-
-nav ul {
-    list-style-type: none;
+/*styles for hamburger*/
+.mobile nav a {
+    color: #fff;
     text-align: center;
-}
-
-nav li {
-    display: block;
-    font-size: 1.5em;
-    font-family: Geneva,Arial, sans-serif;
-    font-weight: bold;
-    border-top: solid 0.5px;
-    color: #f6eee4;
-}
-
-nav li  a {
-    display: block;
-    color: #f6eee4;
-    padding: 0.5% 2%;
+    font-size: 2em;
     text-decoration: none;
+    padding: 3%;
+    display: block;
 }
-
+.mobile nav li a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding:2% ;
+}
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
+}
 
 /*Style rules for main content*/
 main {
@@ -128,11 +132,27 @@ figcaption {
     width: 80%;
     margin: 0 auto;
 }
+
 .tel-link a {
     color:  #f6eee4;
     text-decoration: none;
     font-weight: bold;
 }
+
+#question p {
+    cursor: pointer;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+#answer h2 {
+    display: none;
+}
+
 .mobile h1 {
      font-family: 'Emblema One';font-size: 22px;
 }
@@ -182,18 +202,28 @@ footer a {
     .desktop {
         display: block;
     }
-    .mobile {
+    .mobile, .mobile-nav {
         display: none;
     }
     .mobile-tablet {
         display: none;
     }
+
     
     /*Table viewport styles for nav area*/
+        nav ul {
+    list-style-type: none;
+    text-align: center;
+}
     nav li {
         border-top: none;
         display: inline-block;
         font-size: 1.25em;
+        font-family: Geneva,Arial, sans-serif;
+        font-weight: bold;
+        display: block;
+        color: #f6eee4;
+        text-decoration: none;
     }
 
     nav li a {

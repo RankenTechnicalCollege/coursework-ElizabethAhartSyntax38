@@ -2,7 +2,7 @@
 <!--
 Student Name: Elizabeth Ahart
 File Name: HOME PAGE
-Todays Date: 08/29/2025
+Todays Date: 9/27/25
 -->
 <html lang="en">
     <head>
@@ -13,10 +13,23 @@ Todays Date: 08/29/2025
         <link href="https://fonts.googleapis.com/css?family=RobotoCondensed" rel="stylesheet">
     </head>
     <body>
+        <!--mobile nav-->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">HOME</a>
+                <a href="lessons.html">LESSONS</a>
+                <a href="lessons.html">LESSONS</a>
+                <a href="rentals.html">RENTALS</a>
+                <a href="rentals.html">RENTALS</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
     <header>
          <span class="tablet-desk">&#9836;STrike A Chord &#9836;</span>
     </header>
-    <nav>
+    <nav class="tab-desk">
         <ul>
             <li>home: <a href="index.html">HOME</a></li>
 
@@ -48,5 +61,6 @@ Todays Date: 08/29/2025
         <p>Lessons@STRIKEACHORD.net</p>
 
     </footer>
+    <script src="scripts/scripts.js"></script>
     </body>
     </html>

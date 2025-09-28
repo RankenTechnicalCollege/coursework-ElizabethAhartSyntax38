@@ -1,6 +1,6 @@
 /*
  Author : Elizabeth Ahart
-Date: 9/7/2025
+Date: 9/27/2025
 file name: Styles.css
 */
 
@@ -31,8 +31,29 @@ p {
 
 /* styles for mobile viewport*/
 
-.tablet-desk {
+.tablet-desk, .menu-links {
+    display: none;
+}
+/*style rules for hamburger*/
+
+.mobile-nav li a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
     display: block;
+}
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color:#373684 ;
 }
 /*Style rules for header content */
 
@@ -44,31 +65,17 @@ header {
 
 header h1 {
    
-    font-family: DM Serif Display; font-size: 22px;
+    font-family: DM Serif Display; 
+    font-size: 1.5em;
+    padding: 4%;
+    margin-top: 15%;
 }
 /* style rules for navigation area*/
 
 nav {
     background-color: #373684;
 }
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
 
-nav li {
-    display: block;
-    font-size: 2em;
-  border-top: 1px solid #e5e9fc;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.5% 1%;
-    text-decoration: none;
-}
     
  #piano {
         width: 29px;
@@ -122,6 +129,7 @@ nav li a {
 
     
     }
+   
     h4 {
         color: purple;
     }
@@ -242,10 +250,16 @@ footer a {
         display: block;
 
     }
-    .mobile {
+    .mobile, .mobile-nav {
         display: none;
     }
+   
     /*Tablet viewport styles for header*/
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
     span.tab-desk {
         display: inline;
     }
@@ -261,8 +275,17 @@ footer a {
          border-right: none;
         }
     nav li a {
-       padding: 0.25% 0.5%;
+        padding: 0.25% 0.5%;
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+
         }
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+}
         /*Tablet viewport style rules for map*/
         .map {
             width: 500px;
@@ -350,6 +373,7 @@ footer a {
 
     nav li a {
         padding: 0.5% 1.25%;
+        transform: scale(1.2);
 
     }
     nav li a:hover {
