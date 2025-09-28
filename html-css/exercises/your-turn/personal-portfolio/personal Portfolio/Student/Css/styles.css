@@ -1,5 +1,5 @@
 /*Elizabeth Ahart
-09/10/2025
+09/28/2025
 Consider this your turn*/
 
 /*css reset*/
@@ -99,9 +99,7 @@ figcaption {
   text-decoration: none;
   font-size: 17px;
 }
-nav ul{
-  list-style: square;
-}
+
 nav li {
 list-style-image: none;
 }
@@ -135,12 +133,6 @@ li {
   padding-left: 16px;
 }
 
-/* Insert content that looks like bullets */
-li::before {
-  content: "•"; 
-  padding-right: 8px;
-  color: blue; 
-}
 
 .hero {
     border: solid black;
@@ -194,7 +186,10 @@ table {
       display: block;
     }
     /*Tablet viewport : style rules for nav area*/
-
+    nav ul{
+  list-style-type: none;
+        text-align: center;
+}
     nav li {
         border-top: none;
         display: inline-block;
@@ -203,10 +198,16 @@ table {
     }
     nav li  a :last-child {
         border:0;
-        }
-    nav li a {
-       padding: 0.25px 0.5px;
-    }  
+        } 
+      nav li a {
+        padding: 0.5% 1.25%;
+        transform: scale(1.2);
+
+    }
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e9fc;
+    }
       .tab-desk {
         display: block;
     }
@@ -233,6 +234,12 @@ table {
     nav li a:hover {
         color: #373684;
         background: #e5e9fc;
+    }
+    #menu-links {
+      display: block;
+    }
+    #menu-icon {
+      display: none;
     }
     /*Desk-top viewport style rules for main content */
     #info ul {
