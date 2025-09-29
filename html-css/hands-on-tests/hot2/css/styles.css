@@ -8,26 +8,22 @@ body,header,main,nav,footer {
 /*body styles*/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
     max-width: 100%;
 }
 
 /*header styles*/
 header {
     background-color:darkblue;
-    padding: 30px;
-    margin: 20%;
     border: solid black;
     display: inline-block;
 }
 section {
-    display: block;
+    display:inline-block;
 }
 figure {
-    display: block;
-    border-radius: 2%;
-    border: solid 20px;
-    box-sizing: border-box;
+    box-sizing: content-box;
+
 }
 
 /*styles for Nav*/
@@ -36,6 +32,12 @@ nav ul a {
     color: white;
     float: left;
 }
+nav ul li a {
+    color: #334445
+}
+nav ul li a:hover {
+    color:blue
+}
 
 p {
     color: burlywood;
@@ -43,16 +45,15 @@ p {
 }
 img {
     max-width: 100%;
-    float: left;
+    padding: 2%;
 }
 .left {
-    border: solid;
+    border: solid 20px;
     max-width: 100%;
     padding: 20px;
 }
 main {
     clear: left;
-    border: solid;
 }
 .menu-item {
     border: solid black;
@@ -68,4 +69,6 @@ footer {
     background-color: darkblue;
     color: white;
     text-align: center;
+    border: #334445 solid 20px;
+    border-radius: 2px;
 }
