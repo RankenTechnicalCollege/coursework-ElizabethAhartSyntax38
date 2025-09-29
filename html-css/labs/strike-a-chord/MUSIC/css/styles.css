@@ -14,7 +14,7 @@ body,header,nav,main,footer,h1,ul,section,aside,figure,figcaption {
 /*styles for images*/
 
 img {
-    
+    grid-template-columns: auto auto auto;
     display: block;
 }
 /* style rules for box sizing applies to all elements*/
@@ -26,19 +26,28 @@ p {
     border-bottom: #000;
     padding: auto;
     margin:0 auto;
-    font-size: .5em;
+    font-size:large;
+    background:linear-gradient(purple,white,blue);
 }
 
 /* styles for mobile viewport*/
 
 .tablet-desk, .menu-links {
-    display: none;
+display:none;
 }
+nav li a {
+        padding: 0.25% 0.5%;
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-size:large;
+
+        }
 /*style rules for hamburger*/
 
 .mobile-nav li a {
     color: #fff;
-    text-align: center;
     font-size: 2em;
     text-decoration: none;
     padding: 3%;
@@ -59,7 +68,7 @@ p {
 
 header {
     text-align: center;
-    
+    padding: 5%;
     color: #373684;
 }
 
@@ -76,41 +85,44 @@ nav {
     background-color: #373684;
 }
 
-    
+  /* Clearfix (clear floats) */
+#row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#row {
+    padding: 2% auto;
+    margin: 2% auto;
+
+}
+
  #piano {
-        width: 29px;
-        margin: 20% 0;
-        display:block;
-        padding:12%;
-        float: left;
-        text-align: center;
-       text-decoration: none;
+
+  width: 33.33%;
+  padding: 5px;
+  clear:both;
+  margin: 2% auto;
         
     }
     #guitar {
-            width: 29px;
-        margin: 20% 0;
-        display: block;
-        padding: 12%;
-        text-align: center;
-       text-decoration: none;
-        
+  width: 33.33%;
+  padding: 5px;
+  clear: both;
+  margin: 2% auto;
+
     }
 
     #violin {
-        width: 29px;
-        margin: 20% 0;
-        display: block;
-        padding: 12%;
-        float: right;
-        text-align: center;
-       text-decoration: none;
-        
+  width: 33.33%;
+  padding: 5px;
+  clear: right;
+  margin: 2% auto;
+
     }
     #info {
-        padding: 12%;
-        display: block;
-        
+            clear: left;
+            padding: 1% 2%;
     }
     #hero {
         padding: 10%;
@@ -119,24 +131,14 @@ nav {
     section, h4{
         display:grid;
         grid-columns: auto auto auto;
-        grid-gap: 12%;
+        grid-gap:2%;
         text-align: center;
         font-size: medium;
-        margin: 0% auto;
-        box-sizing: border-box;
-        margin: bottom 0;
-   
-
-    
+        max-width: 100%
     }
    
     h4 {
         color: purple;
-    }
-
-    p {
-       
-        background:linear-gradient(purple,white,blue);
     }
 
 /*Style rules for main content*/
@@ -144,7 +146,6 @@ main {
     font-family: 'Roboto';font-size: 22px;
     padding:2%;
     background-color: #e5e9fc;
-    overflow: auto;
      
 }
 
@@ -158,22 +159,18 @@ main p {
     font-weight: bold;  
 }
 
-#piano,#guitar,#violin {
-    margin: 0 2%;
-}
-
-#info {
-    clear: left;
-    background-color: #c0caf7;
-    padding: 1% 2%;
-}
 
 #info ul {
     margin-left: 10%;
+    text-decoration: none;
 }
 
-.round {
+.center {
     border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #contact {
@@ -232,6 +229,9 @@ label {
     background-color: #b7b7e1;
     font-size: 1em;
 }
+#info ul li {
+    text-decoration: none;
+}
 /* Style rules for footer content*/
 footer {
     text-align: center;
@@ -242,6 +242,7 @@ footer a {
     color: #4645a8;
     text-decoration: none;
 }
+
 /*Media query for tablet viewport*/
 
 @media screen and (min-width: 550px) ,print {
@@ -390,12 +391,10 @@ footer a {
 
     }
     #piano, #guitar, #violin {
-        width: 29px;
-        float: left;
         margin: 0% 2%;
     }
     .grid {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
        
     }
      figcaption {
