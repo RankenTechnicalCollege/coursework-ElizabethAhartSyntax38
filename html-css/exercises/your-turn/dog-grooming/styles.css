@@ -1,0 +1,16 @@
+/*
+Elizabeth Ahart
+dog-groom Your turn
+9/30/25
+*/
+
+/*css reset*/
+
+body, nav, main, img, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+img {
+    max-width: 100%;
+}
