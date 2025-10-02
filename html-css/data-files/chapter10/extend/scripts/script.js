@@ -4,4 +4,10 @@
     Date: 9/27/25
 */
 
-$('p').css('color','red').hide();
+$(document).ready(function() {
+    $('p').hide();
+});
+
+$(document).ready(function() {
+    $('p').show();
+});

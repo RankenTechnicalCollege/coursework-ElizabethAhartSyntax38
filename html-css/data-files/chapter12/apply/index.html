@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--Elizabeth Ahart
+Ch12 bootstrap
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning bootstrap |apply you knowledge 12</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+
+  <body>
+   <!--bootstrap jumbotron-->
+   <header class="jumbotron jumbotron-fluid text-center mb-0">
+   <div class="container">
+    <h1 class="display-3">Learning bootstrap</h1>
+    <p class="Lead">This is an example of jumbotron</p>
+   </div>
+   </header>
+
+   <!--bootstrap navigation bar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <!--Hamburger menu-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--nav links-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <!--main content area-->
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <h3> column 1</h3>
+                <p>This row1 column1 of my layout. this column was created using col-sm-4 class.</p>
+            </div>
+            <div class="col-sm-4 bg-info">
+                <h3>Column2</h3>
+                <p >This is row1 column2, column2 has the info class applied to set the background color</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column3</h3>
+                <p>this is row1 column 3 of my layout. this column was created using col-sm-4 class.</p>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer class="jumbotron-fluid text-center bg-dark p-2">
+        <div class="container text-white">
+            <p>&copy;Copyright 2021. All rights reserved. </p>
+            <p>Webpage created by : Elizabeth Ahart</p>
+        </div>
+    </footer>
+  </body>
+</html>
