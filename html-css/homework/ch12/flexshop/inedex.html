@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- 	
+	Student Name: Elizabeth AHart
+	File Name: flexbox ch12
+	Date:10-3-25
+-->
+<html lang="en">
+  <head>
+    <title>flexbox</title>
+    <meta charset="utf-8" />
+    <link rel="Stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Use the header area for the website name or logo. -->
+    <header class="header">
+      <a href="inedex.html"
+        ><img
+          src="images/shop.png"
+          class="header-logo"
+          alt="computer with the text web design"
+          height="326"
+          width="450"
+      /></a>
+      <h1 class="header-text"><a href="inedex.html">Flex Shop</a></h1>
+      <form method="get" action="search.html" class="header-searchform">
+        <input type="search" placeholder="search" class="header-searchbox" />
+      </form>
+      <a href="#">
+        <img src="images/user.png" alt="My Account" title="My Account" class="header-account" />
+      </a>
+      <a href="#">
+        <img src="images/cart.png" alt="shopping-cart" title="Shopping Cart" class="header-cart" />
+      </a>
+    </header>
+
+    <!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <div class="navbar-link" tabindex="0">Electronics</div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Tvs</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Computers</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar-item">
+          <div class="navbar-link" tabindex="1">Clothing</div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Shirts</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Pants</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- to SpotLight -->
+    <section class="spot-light">
+      <div class="spotlight-img" style="background-image: url(images/spotlight.jpg)">
+        <div class="spotlight-text">Big Sale 50% off everything</div>
+      </div>
+    </section>
+    <!-- Use the main area  -->
+    <main class="content">
+      <ul class="product-list">
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-1.jpg)"></div>
+          <div class="product-name">Fancy Camera</div>
+          <div class="product-price">$199.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-2.jpg)"></div>
+          <div class="product-name">Special Camera</div>
+          <div class="product-price">$299.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-3.jpg)"></div>
+          <div class="product-name">Glitzy Camera</div>
+          <div class="product-price">$399.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-1.jpg)"></div>
+          <div class="product-name">Fancy Camera</div>
+          <div class="product-price">$199.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-2.jpg)"></div>
+          <div class="product-name">Special Camera</div>
+          <div class="product-price">$299.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-3.jpg)"></div>
+          <div class="product-name">Glitzy Camera</div>
+          <div class="product-price">$399.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-1.jpg)"></div>
+          <div class="product-name">Fancy Camera</div>
+          <div class="product-price">$199.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-2.jpg)"></div>
+          <div class="product-name">Special Camera</div>
+          <div class="product-price">$299.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-3.jpg)"></div>
+          <div class="product-name">Glitzy Camera</div>
+          <div class="product-price">$399.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-1.jpg)"></div>
+          <div class="product-name">Fancy Camera</div>
+          <div class="product-price">$199.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-2.jpg)"></div>
+          <div class="product-name">Special Camera</div>
+          <div class="product-price">$299.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-3.jpg)"></div>
+          <div class="product-name">Glitzy Camera</div>
+          <div class="product-price">$399.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-1.jpg)"></div>
+          <div class="product-name">Fancy Camera</div>
+          <div class="product-price">$199.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-2.jpg)"></div>
+          <div class="product-name">Special Camera</div>
+          <div class="product-price">$299.99</div>
+        </li>
+        <li class="product">
+          <div class="product-img" style="background-image: url(images/product-3.jpg)"></div>
+          <div class="product-name">Glitzy Camera</div>
+          <div class="product-price">$399.99</div>
+        </li>
+      </ul>
+    </main>
+
+    <!-- Use the footer area to add static footer content. -->
+    <footer class="footer">
+      <div class="footer-address">
+        <div class="footer-address-line">4431 Finney ave</div>
+        <div class="footer-address-line">St.louis Mo, 63114</div>
+        <div class="footer-address-line">1-866-4-RANKEN</div>
+      </div>
+      <div class="footer-copyright">&copy; Copyright 2019 .FlexShop :Elizabeth Ahart</div>
+    </footer>
+  </body>
+</html>
