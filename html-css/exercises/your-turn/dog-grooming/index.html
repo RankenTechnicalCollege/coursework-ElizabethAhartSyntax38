@@ -17,20 +17,35 @@
              <link rel="stylesheet" href="styles.css" media="screen and(min-width:600px) and (max-width:1279)">
              <link rel="stylesheet" href="styles.css" media="screen and(min-width:650px)">
              <link rel="stylesheet" href="styles.css" media="print">
+             <link rel="stylesheet" type="image/png" sizes="32x32" href="images/favicon.ico">
         </head>
     <body>
 
 	<header class="image">
 		<h1>Groom!, Groooom, !Grrooom! Your Turn</h1>
         <img class="hero" src="images/dog-banner.jpg" alt=" dogs in bed smiling">
+        <img class="logo" id="logo" src="images/dog-towel.jpg" alt="dog in bath">
 	</header>
+    <!--Mobile nav-->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="template.html">Home Page</a>
+            <a href="contact.html">Contact-Us</a>
+            <a href="services.html">reserve</a>
+            <a href="staff.html">Gr-Professionals</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+    </nav>
 
-	<nav>
+	<nav class="tablet-desktop">
 		<ul>
 		    <li>SVG Resource<a href="https://www.w3schools.com/html/html5_svg.asp" target="_blank">SVG Resources</a></li>
             <li><a href="template.html">Home Page</a></li>
             <li><a href="contact.html">Contact-Us</a></li>
-            <li><a href="index.html">reserve</a></li>
+            <li><a href="services.html">reserve</a></li>
+            <li><a href="staff.html">Gr-Professionals</a></li>
         </ul>
 	</nav>
 
@@ -57,6 +72,12 @@
             <img src="images/dog-bath.jpg" alt="dog in bath">
 
         </div>
+        <video controls poster="images/dog-banner.jpg" width="320" height="240">
+            <source src="media/groom.mp4" type="video/mp4">
+            <source src="media/groom.webm" type="video/webm">
+            <track src="media/captions.vtt" kind="captions" srclang="en" label="english">
+            <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="english">
+        </video>
 
 	</main>
 

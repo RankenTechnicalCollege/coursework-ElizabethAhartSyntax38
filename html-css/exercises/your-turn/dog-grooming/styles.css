@@ -36,17 +36,64 @@ nav {
     background-color: blue;
     color: white;
     font-size: x-large;
+    padding: 1%;
+    margin-bottom: 1%;
 
 }
 nav :hover{
     color: black;
 }
-nav ul{
+.mobile-nav {
+    font-size: x-small;
+}
+.mobile-nav a{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
     color:white
+}
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+/*staff page table styles*/
+table, th, td {
+    border: 0.1em;
+}
+th {
+    background-color: #ccc;
+}
+tr:nth-child(even) {
+    background-color:#ccc;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 2em;
+    width: 100%;
 }
 
 nav li:hover {
 color: black;
+}
+td {
+    height:2em;
 }
 
 /*style rules for main */
@@ -60,7 +107,7 @@ border: black 2px;
 float: right;
 }
 /* the hero image */
-#image {
+#image ,#image1 ,#image2 {
     border: black 2px;
 }
 .contact {
@@ -68,6 +115,13 @@ float: right;
 }
 .contact a:hover {
     color: yellow;
+}
+/*and menu-liks*/
+.tablet-desktop, #logo {
+    display: none;
+} 
+#menu-links {
+    display: block;
 }
 /*footer styles*/
 /*style rules for mobil viewport*/
@@ -95,7 +149,14 @@ footer {
 }
 @media only screen and(min-width:768) {
     main {
+        display: block;
         width: 90%;
+    }
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    table {
+        width: 80%;
     }
 }
 
