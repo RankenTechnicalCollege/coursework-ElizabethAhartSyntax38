@@ -2,7 +2,7 @@
 <!-- Student's Name,Elizabeth Ahart
   Today's Date 10/5/25
   ch12 homework2 -->
-<html lang="zxx">
+<html lang="en">
 <head>
 	<title>HomePage</title>
 	<meta charset="utf-8">
@@ -13,48 +13,94 @@
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 <body>
+    <section id="hero">
+            <h2 >MY Favorite Things Website By &copy; Elizabeth Ahart</h2>
+            <img class="left" src="images/clouds.jpg" alt="clearing clouds">
+            <p>There will always be clouds The "My Favorite Things Web-site" will Clear you day</p>
+    </section>
 
 	<div id="container">
 
         <!-- Use the header area for the website name or logo -->
         <header>
-            <h1 class="title">Favorite Books and Cards</h1>
+            <h1 class="title">HOMEPAGE</h1>
         </header>
 
         <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="places.html" target="_blank">Favorite-Places</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-            </ul>
-        </nav>
+           <!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <div class="navbar-link" tabindex="0">HomePage</div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="places.html" class="navbar-link">Places</a>
+            </li>
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">books</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar-item">
+          <div class="navbar-link" tabindex="1">Hobby Lobby</div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="music.html" class="navbar-link">Music</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Movies</a>
+            </li>
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">HomePage</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
         <!-- Use the main area to add the main content of the webpage -->
         <main>
 
             <article class="Grid">
-                <h3>Lorem ipsum</h3>
-                    <section>
-                        <h3>CSS Grid Layout</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
 
-                    <section>
-                        <h3>Opacity</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
+                        <h3>HomePage</h3>
+                            <button type="button" class="accordion">Homepge</button>
+                            <div class="panel"><img src="images/favicon-32.png" alt="happy face">
+                            <p>The HomePage here i will Introduce The purpose of the "My favorite things web-site.</p>
+                            </div>
 
-                    <section>
-                        <h3>Shadows</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
+                        <h3>Books "my favorite books page</h3>
+                        <button type="button" class="accordion">Books</button>
+                        <div class="panel"><img src="images/curacao-thumb.jpg" alt="small picture ocean">
+                        <p>The books page displays my Favorite books ."well The Books books books i love!", and ! i hope u enjoy my Favorite Things Web-site!.</p>
+                        </div>
 
-                    <section>
-                        <h3>Favicon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
+
+                        <h3>Places.html , my Favicon And My favorite Vacations</h3>
+                        <button type="button" class="accordion">Vacations</button>
+                        <div class="panel"><img src="images/favicon.ico" alt="happy face">
+                        <p>The Places page will Give you insight on My favorite places to travels . Why i Choose the Emoji as My favorite Gif and a Search tool for look-up</p>
+                        </div>
+
+                        <h3>Movies</h3>
+                        <button type="button" class="accordion">Movies</button>
+                        <div class="panel">
+                        <p>The movies page will Give you insight on My favorite Movies . Why i love the movie and a list of Starring Actors</p>
+                        </div>
+
+
+                        <h3>Favorite Music</h3>
+                        <button type="button" class="accordion">Music</button>
+                        <div class="panel">
+                        <p>The Music page  is definitely my favorite. I will Give you insight on My favorite Music and Why i love love love The music i listen for ! . As well as, a list of Starring Producers and product by my favorite Artist!</p>
+                           <audio controls>
+                             <source src="media/guitar.mp3" type="audio/mp3">
+                             <source src="media/guitar.ogg" type="audio/ogg">
+                             <p>Your browser does not support the audio Element</p>
+                           </audio>
+                        </div>
+
+
 
                     <aside>
                         <h2>Practice Makes Perfect</h2>

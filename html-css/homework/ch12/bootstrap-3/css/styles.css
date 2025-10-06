@@ -22,6 +22,39 @@ body {
     text-shadow: 4px 4px 4px black;
     color: #fff;
 }
+/*animation*/
+#placeholder {
+	display: none;
+}
+
+figure {
+	text-align: center;
+	padding: 1em;
+}
+/*styling the home page for the accordion template*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: seagreen; 
+}
+
+.panel {
+  padding: 0 18px;
+  display:block;
+  background-color: white;
+  overflow: hidden;
+}
 
 /* Style rules for mobile viewport */
 
@@ -280,3 +313,50 @@ footer {
 	}
     
 }
+.bg-light-blue {
+    background-color: #cce6ff;
+}
+#placeholder {
+	display: block;
+}
+
+figure {
+	text-align: center;
+	padding: 1em;
+}
+
+button {
+    height: 3em;
+    font-size: 1em;
+}
+/*keyframes for moviePage*/
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #33091b;
+    margin-left: 6%;
+	-webkit-animation-name: my-animation;
+	animation-name: my-animation;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	}
+	.square:hover {
+		transform: (translate(80px));
+	}
+
+/*Animation*/
+@-webkit-keyframes color {
+	from {
+		background-color: #fbdae9};
+		to {
+			background-color: #660b32;
+		}
+
+	}
+	@keyframes color {
+		from {
+		background-color: #fbdae9};
+		to {
+			background-color: #660b32;
+		}
+	}
