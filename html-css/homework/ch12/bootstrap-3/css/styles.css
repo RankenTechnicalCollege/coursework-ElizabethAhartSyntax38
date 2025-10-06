@@ -359,4 +359,14 @@ button {
 		to {
 			background-color: #660b32;
 		}
-	}
+}
+  
+      @media print {
+        body {
+        background-color: white;
+        }
+    }
+
+
+
+
