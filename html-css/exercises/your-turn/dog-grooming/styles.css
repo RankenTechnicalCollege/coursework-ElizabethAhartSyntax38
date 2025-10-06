@@ -1,7 +1,7 @@
 /*
 Elizabeth Ahart
 dog-groom Your turn
-9/30/25
+10/6/25
 */
 
 /*css reset*/
@@ -11,6 +11,100 @@ body, nav, main, img, div {
     padding: 0;
     border: 0;
 }
+header {
+  font-family: "B612", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.round {
+    border-radius: 8px;
+}
+/*Responsive*/
 img {
     max-width: 100%;
+    display: block;
+}
+
+
+/*style rules for body and nav*/
+body {
+    background-color: lightblue;
+}
+nav {
+    max-width: 100%;
+    list-style: none;
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+
+}
+nav :hover{
+    color: black;
+}
+nav ul{
+    color:white
+}
+
+nav li:hover {
+color: black;
+}
+
+/*style rules for main */
+div {
+    border: black 2px;
+}
+/*the div class name that hold images*/
+.image {
+background-color: blue;
+border: black 2px;
+float: right;
+}
+/* the hero image */
+#image {
+    border: black 2px;
+}
+.contact {
+    background-image: linear-gradient(#444, #888, #2525);
+}
+.contact a:hover {
+    color: yellow;
+}
+/*footer styles*/
+/*style rules for mobil viewport*/
+footer {
+    background-image: linear-gradient(#444, #888, #2525);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    clear: right;
+}
+/*Media viewport*/
+@media print {
+    body {
+        background-color: white;
+    }
+    
+}
+@media only screen and(min-width:481px) {
+    nav ul li {
+        display: inline;
+    }
+    header {
+        display: none;
+    }
+}
+@media only screen and(min-width:768) {
+    main {
+        width: 90%;
+    }
+}
+
+@media only screen and(min-width:1280px) {
+    footer {
+   background-image: linear-gradient(#111, #888, #2525);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    clear: right;
+    }
 }
