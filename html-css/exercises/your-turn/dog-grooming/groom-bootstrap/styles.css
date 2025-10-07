@@ -58,6 +58,16 @@ nav :hover{
     right: 0;
     top: 0;
 }
+.mobile-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    position:relative;
+    background-color:aquamarine
+}
 
 nav ul {
     list-style: none;
@@ -118,7 +128,45 @@ float: right;
     display: none;
 } 
 #menu-links {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    position:relative;
+    background-color:aquamarine
+}
+.navbar {
+      display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    position:relative;
+    background-color:aquamarine
+}
+.navbar-expand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    position:relative;
+    background-color:aquamarine
+
+}
+.collapse {
+      display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    position:relative;
+    background-color:aquamarine
 }
 /*footer styles*/
 /*style rules for mobil viewport*/
