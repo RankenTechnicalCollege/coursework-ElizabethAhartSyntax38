@@ -45,6 +45,14 @@ nav :hover{
 }
 .mobile-nav {
     font-size: x-small;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    margin:0;
+    position: relative;
+    background-color:seagreen
+
 }
 .mobile-nav a{
     color: #fff;
@@ -121,7 +129,13 @@ float: right;
     display: none;
 } 
 #menu-links {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style-type: none;
+    margin:0;
+    position: relative;
+    background-color:seagreen
 }
 /*footer styles*/
 /*style rules for mobil viewport*/
