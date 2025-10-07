@@ -8,6 +8,67 @@ body,nav,main,footer {
     padding:0;
     border:0;
 }
+header, footer {
+    max-width:100%;
+    clear: left;
+}
+.row {
+    border: #622 solid 2px;
+    padding: 20%;
+    margin: auto;
+}
+col {
+      border: #622 solid 2px;
+    padding: 2%;
+    margin: auto;
+
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    align-items: right;
+    justify-content: center;
+}
+header{
+     text-align:center;
+    text-shadow: 4px 4px 4px black;
+    font-size:1em;
+}
+/*spotlight text under header*/
+.spotlight-img {
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 2px 2px 2px black;
+    clear: right;
+}
+.spotlight-text {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+    clear: right;
+}
+.article {
+    font-size:1em;
+    color: black;
+    text-align:center;
+    text-shadow: 4px 4px 4px black;
+    max-width:100%;
+    justify-content: flex-end;
+    display:flex;
+    align-items:flex-end;
+    flex-flow: column wrap;
+}
+.active {
+    color:#622;
+}
 /*header*/
 .Header {
     display: flex;
@@ -30,6 +91,7 @@ body,nav,main,footer {
 .header-text a {
     text-decoration: none;
     color: black;
+    font-size: large;
 }
 .header-searchform {
     flex-basis: 50%;
@@ -49,10 +111,9 @@ body,nav,main,footer {
 .navbar-menu{
     display: flex;
     justify-content: flex-start;
-    align-items: stretch;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 10;
     position: relative;
     background-color: seagreen;
 }
@@ -104,4 +165,169 @@ body,nav,main,footer {
     justify-content: flex-start;
     align-items: center;
     background-image:linear-gradient(#123456,#fff,#555)
+}
+/*jumbotron*/
+.hero {
+    background-image: linear-gradient(#622,#fff,#555 url("images/tshirtlarge.jpg"));
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+     margin:0 2;
+    padding:5em;
+     border-bottom: solid black 5px;
+}
+.welcome {
+    position:absolute;
+    top:20%;
+    margin:auto;
+    padding:2em;
+
+}
+.welcome p {
+    font-size: .5em;
+    width: 70%;
+    line-height:1.5;
+    position: relative;
+}
+figure {
+    padding:2em;
+    float:left;
+    clear:left;
+    background-color: linear-gradient(#622,#fff,#555) ;
+    
+}
+.link {
+     position:absolute;
+    top:20%;
+    margin:auto;
+    padding:2em;
+}
+.content {
+    margin:30px;
+}
+/*jumbo productpage*/
+.jumbotron {
+    position: absolute;
+    clear:right;
+    margin-bottom: auto;
+    padding-right: 5%;
+    justify-content: center;
+    top:20%;
+}
+ul {
+    margin: 2%;
+    padding: 5%;
+    text-decoration: none;
+}
+li {
+     margin: 2%;
+    padding: 5%;
+    text-decoration: none;
+
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    clear: left;
+
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    clear: left;
+}
+.pro {
+    background-color: #fff;
+}
+.product-img {
+    width: 100%;
+    height: 100px;
+    flex-grow: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap-reverse;
+     clear: left;
+}
+.product-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap-reverse;
+}
+article {
+    float:left;
+    clear:left;
+    display: block;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-content: center;
+}
+section h1 {
+    align-content: flex-end;
+    text-align: center;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    float:right
+}
+figure h1 {
+    font-size:xx-large;
+    box-shadow:#123456 #fff #222;
+}
+
+
+
+/*media viemports various sizes*/
+@media print {
+    body {
+        background-color: white;
+    }
+    
+}
+@media only screen and(min-width:481px) {
+    nav ul li {
+        display: inline;
+    }
+    header {
+        display: none;
+    }
+    #navbar-responsive {
+        flex-direction: row-reverse;
+    }
+}
+@media only screen and(min-width:768) {
+    main {
+        display: block;
+        width: 90%;
+    }
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    table {
+        width: 80%;
+    }
+}
+
+@media only screen and(min-width:1280px) {
+    footer {
+   background-image: linear-gradient(#111, #888, #2525);
+    top: 0;
+    clear: right;
+    }
 }
