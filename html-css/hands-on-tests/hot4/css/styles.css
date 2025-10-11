@@ -11,7 +11,7 @@ body,nav,main,footer {
 /*header*/
 .Header {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: flex-start;
     align-items: center;
     background-image:linear-gradient(red,blue,white)
@@ -30,20 +30,48 @@ li {
     color: blue;
 }
 .badge  {
-    color: yellow;
+    color: gold;
+    box-shadow: 2px 2px 2px black;
 }
 col-sm-4 {
     align-content: space-evenly;
     border: 2px solid black;
+    padding: 2px;
+flex-direction: column-reverse;
 }
 img{
     max-width: 100%;
 }
-.collapse {
+.collapse , .accordion-body , .accordionFlushExample {
     align-items: center;
     background-color: red;
-    padding: 5px;
     clear: right;
+    display: none;
+}
+.modal-dialog {
+     align-content: space-evenly;
+    border: 2px solid black;
+     width: 200px;
+    height: 250px;
+    margin: 5px;
+    position: relative;
+    align-content: flex-start;
+} 
+.modal-body {
+     align-content: space-evenly;
+    border: 2px solid black;
+     width: 150px;
+    height: 150px;
+    margin: 5px;
+    align-items: center;
+    position: relative;
+    background-color: #888;
+}
+.modal-footer{
+     align-content: space-evenly;
+    border: 2px solid black;
+    position: relative;
+    background-color: blue;
 }
 /**/
 
@@ -73,17 +101,17 @@ img{
 
 
 .navbar-menu{
-    display: flex;
+    display: block;
     justify-content: flex-start;
     align-items: stretch;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 2%;
     position: relative;
     background-color: seagreen;
 }
 .navbar-item {
-    display: block;
+    display:block;
     flex: 0 0 auto;
     margin: 0;
     padding: 0;
@@ -101,8 +129,8 @@ img{
     background-color: gray;
 }
 .navbar-menu .navbar-menu {
-    display: none;
-    flex-direction: column;
+    display:block;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
     position: center;

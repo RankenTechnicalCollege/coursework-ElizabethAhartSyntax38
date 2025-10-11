@@ -74,7 +74,7 @@ header{
 /*header*/
 .Header {
     display: flex;
-    flex-direction: row;
+    flex-direction: stretch;
     justify-content: center;
     align-items: center;
     background-image:linear-gradient(#123456,#fff,#555)
@@ -89,6 +89,7 @@ header{
     padding: .5em;
     flex-shrink: 0;
     text-align: center;
+   box-shadow: 0 2px 2px 2px black;
 }
 .header-text a {
     text-decoration: none;
@@ -117,12 +118,12 @@ header{
 
 
 .navbar-menu{
-    display: flex;
+    display: block;
     justify-content: flex-start;
     list-style-type: none;
-    margin: 5;
-    padding: 2%;
-    position: relative;
+    margin: 2%;
+    padding: 5%;
+    position:center;
     background-color: seagreen;
 }
 .navbar-item {
@@ -139,16 +140,17 @@ header{
     padding: 1em;
     background-color: seagreen;
     color: white;
+    position: center;
 }
 .navbar-link:hover, .navbar-link:focus{
     background-color: gray;
 }
 .navbar-menu .navbar-menu {
     display: none;
-    flex-direction: column;
+    flex-direction:column-reverse;
     justify-content: flex-start;
     align-items: stretch;
-    position: absolute;
+    position: center;
     top: 100%;
     min-width: 10em;
 
@@ -211,12 +213,13 @@ figure {
     float:left;
     clear:left;
     background-color: linear-gradient(#622,#fff,#555) ;
-    margin-bottom: 50%;
+    position: relative;
+
     
 }
 .link {
-     position:absolute;
-    top:20%;
+     position:row;
+    top: 20%;
     margin:auto;
     padding:2em;
 }
@@ -227,10 +230,12 @@ figure {
 .jumbotron {
     position: absolute;
     clear:right;
-    margin-bottom: auto;
+    margin-bottom:2%;
     padding-right: 5%;
     justify-content: center;
     top:20%;
+    height: 10px;
+    
 }
 ul {
     margin: 2%;
