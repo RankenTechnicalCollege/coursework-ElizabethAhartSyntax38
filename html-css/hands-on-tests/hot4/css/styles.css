@@ -40,10 +40,10 @@ li {
 }
 col-sm-4 {
     align-content: space-evenly;
-    border: 2px solid black;
     padding: 2px;
    flex-direction: column;
     margin: 5px;
+    position:row-reverse;
 }
 img{
     max-width: 100%;
@@ -100,6 +100,15 @@ img{
      align-content: center;
      background-image: linear-gradient(red,white);
 }
+ol li a{
+    color: black;
+    font-size:large;
+    font-style:italic;
+
+}
+ol li a:hover {
+    color:yellow
+}
 
 .header-text {
     padding: .5em;
@@ -148,6 +157,7 @@ footer a {
     font-size:x-large;
     font-weight:bolder;
     box-shadow:2px 2px 2px black;
+    color:antiquewhite;
 }
 /*media viemports various sizes*/
 @media print {
