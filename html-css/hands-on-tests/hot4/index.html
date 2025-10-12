@@ -27,99 +27,105 @@
                     <a href="#">
                     <img src="images/favicon.ico" alt="shopping-cart" title="Shopping Cart" class="img-fluid" >
                     </a>
-              <nav class="navbar">
-      <ul class="navbar-menu">
-        <li class="navbar-item">
-          <div class="navbar-link" tabindex="0">HOME</div>
-          <ul class="navbar-menu">
-            <li class="navbar-item">
-              <a href="index.html" class="navbar-link">Home</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
         </header>
 
         <main>
           <h1>SNACK ATTACK&amp;My-FAVORITE-SNACK&amp; SNACK ATTACK</h1>
           <div class="container">
             <div class="row">
-
-              <div class="col-sm-4">
+               <div class="col-sm-4">
                 <div class="accordion-item">
-      <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" onclick="collapse()" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        CLICK FOR MORE PIZZA!
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse accordionFlushExample" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"><img src="images/pizza5.webp" alt="pizza"> this assignment is about PIZZA! Hands-on-Test FAVORITE SNACK_ATTACK</div>
-    </div>
-  </div>
+               <h2 class="accordion-header">
+            <button class="accordion-button collapsed offer" type="button" onclick="discount()" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+           CLICK FOR MORE PIZZA!
+            </button>
+           </h2>
+           <div id="flush-collapseTwo" class="accordion-collapse collapse accordionFlushExample" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" id="special"> this assignment is about PIZZA! Hands-on-Test FAVORITE SNACK_ATTACK</div>
+           </div>
+            </div>
               </div>
 
               <div class="col-sm-4">
                  <img src="images/pizza5.webp" alt="pizza box">
                 <ol class="list-group list-group-numbered">
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">PINEAPPLES</div>
-      Pizza with PINEAPPLES
-    </div>
-    <span class="badge text-bg-primary rounded-pill">&euro;5 Stars</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">SPINACH</div>
-      Vegetables are the KING of Pizza
-    </div>
-    <span class="badge text-bg-primary rounded-pill">5 Stars</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">GALIC SALT&amp;BUTTER</div>
-      Garlic and Cheese, garlic toasted Crust, Garlic Butter &amp;DIP
-    </div>
-    <span class="badge text-bg-primary rounded-pill">&euro;5 Stars</span>
-  </li>
-</ol>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+              <div class="fw-bold">PINEAPPLES</div>
+                  Pizza with PINEAPPLES
               </div>
-
+              <span class="badge text-bg-primary rounded-pill">&euro;5 Stars</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+              <div class="fw-bold">SPINACH</div>
+              Vegetables are the KING of Pizza
+             </div>
+             <span class="badge text-bg-primary rounded-pill">5 Stars</span>
+             </li>
+             <li class="list-group-item d-flex justify-content-between align-items-start">
+             <div class="ms-2 me-auto">
+             <div class="fw-bold">GALIC SALT&amp;BUTTER</div>
+             Garlic and Cheese, garlic toasted Crust, Garlic Butter &amp;DIP
+            </div>
+            <span class="badge text-bg-primary rounded-pill">&euro;5 Stars</span>
+            </li>
+            </ol>
+            </div>
               <div class="col-sm-4">
                 <h1>PIZZA! PIZZA! SNACK ATTACK</h1>
               <img class="responsive" src="images/pizza3.webp" alt="pizza in box">
               </div>
               <div class="col-sm-4">
                 <div class="modal" tabindex="-1">
-  <div class="modal-dialog">
+  <div class="modal-dialog" style="background-image: url(images/pizza5.webp);">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">PIZZA ORDERS? </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="close()" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>I love Pizza i could Just ORDER ALL THE TIME!</p>
+        <p class="modal-text">I love Pizza i could Just ORDER ALL THE TIME!</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" onclick="close()" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
               </div>
               <div class="col-sm-4">
-              </div>
+                <h2 class="display-3"><span class="active"> I Most like pineapples on my pizza, i have recently started to enjoy green pizza, I used to love the california dried tomato Pizza, and OLIVES IVE TRIED and ENJOY OLIVES click below emoji for Pizza carouselExample </span></h2>
+                <figure>
+                <img onclick="pic1()"  src="images/trunk-bay-thumb.jpg" alt="Elevated view of Trunk Bay beach on St. John">
+                <img onclick="pic2()" src="images/sanjuan-thumb.jpg" alt="Elevated view of San Juan coast">
+                <img onclick="pic3()" src="images/curacao-thumb.jpg" alt="The blue waters of Curacao">
+           </figure>
+               <figure id="placeholder">
+                <img src="images/favicon.ico" alt="placeholder" id="image">
+                <figcaption></figcaption>
+            </figure>
             </div>
           </div>
-
+          </div>
         </main>
         <footer class="container footer text-center bg-primary p-5 fixed-bottom">
-            <div class="text-center text-white">
-                <p>&copy; copyright Elizabeth Ahart 2025</p>
-                <p><a href="mailto:lizplusone@yahoo.com">Contact-Us</a></p>
+            <div class="text-center text-white row">
+              <div col-sm-4>
+                <p>&copy; copyright Elizabeth Ahart 2025
+                <a href="inedex.html"><img
+          src="images/curacao-thumb.jpg"
+          class="footer-logo"
+          alt="island">
+        </a>
+        </p>
+              </div>
+              <div  col-sm-4>
+              </div>
+                 <p><a href="mailto:lizplusone@yahoo.com">Contact-Us</a></p>
             </div>
+
 
         </footer>
         <script src="js/jquery-3.7.1.min.js"></script>

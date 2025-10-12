@@ -1,18 +1,46 @@
 //elizabeth Ahart 10-8-25 HOT$
 
-$(document).ready(function collapse(){
 
- var menu = document.getElementsByClassName("accordion-body");
- var link = document.getElementsByClassName("accordionFlushExample");
 
- if(menu.style.display==="none" && link.style.display ==="none"){
-  menu.style.display="block";
- link.style.display="block";
- }else{
-  menu.style.display="none";
-  link.style.display="none";
- }
- 
- 
-});
+
+$(document).ready();
+
+
+function discount(){
+    var figElement = document.getElementById("special");
+    promo.style.display="block";
+}
+function close(){
+    var figElement = document.getElementsByClassName("modal-text")
+    pizza.style.display="none";
+}
+
+var figElement = document.getElementById("placeholder")
+var imgSource = document.getElementById("image")
+var figCap = document.querySelector("figcaption");
+//Function to display the first picture
+function pic1() {
+    imgSource.src = "images/pizza5.webp"
+    imgSource.alt = "Pizza in box";
+    figElement.style.display = "block"
+    figCap.textContent = "Pizza in box";
+}
+//function 2
+
+function pic2() {
+    imgSource.src = "images/pizza3.webp"
+    imgSource.alt = "Pizza pie in box"
+    figElement.style.display = "block"
+    figCap.textContent = "Pizza in box"
+}
+//function 3
+
+function pic3() {
+    imgSource.src = "images/pizza5.webp"
+    imgSource.alt = "in box? A pizza"
+    figElement.style.display = "block"
+    figCap.textContent = "Pizza in box"
+
+}
+
 
