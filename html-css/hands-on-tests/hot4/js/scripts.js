@@ -7,11 +7,11 @@ $(document).ready();
 
 
 function discount(){
-    var figElement = document.getElementById("special");
+    var promo = document.getElementById("special");
     promo.style.display="block";
 }
 function close(){
-    var figElement = document.getElementsByClassName("modal-text")
+    var pizza = document.getElementsByClassName("modal-text")
     pizza.style.display="none";
 }
 

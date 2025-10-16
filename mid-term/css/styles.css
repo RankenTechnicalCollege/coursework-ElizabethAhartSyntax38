@@ -1,0 +1,105 @@
+/*Elizabeth Ahart
+Mid-term
+10-15-25
+*/
+
+/*CSS reset*/
+body,main,header,footer,nav {
+    margin: 0;
+    padding:0;
+    border:0;
+}
+* {
+    box-sizing: border-box;
+}
+
+header {
+	font-family: Verdana, Arial, sans-serif;
+	padding: 2%;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 590x;
+    background-color: lightslategray;
+}
+video {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    display:flex;
+    align-self: stretch;
+    background-color: rgba(162, 158, 158, 0.5);
+}
+/*Text animation to lay the text over the vid as it plays*/
+@-webkit-keyframes text-animation {
+    0%{font-size: 1em;}
+    50%{font-size: 2em;}
+    100%{font-size: 1.35em;}
+}
+@keyframes text-animation {
+    0%{font-size: 1em;}
+    50%{font-size: 2em;}
+    100%{font-size: 1.35em;}
+}
+    
+.jumbotron {
+    height: 50vh;
+    max-width: 100%;
+    width: 100%;
+    box-shadow:2px 2px 2px 2px lightgray;
+    align-items:center;
+    align-content: center;
+    display:flex;
+    flex-direction: row-reverse;
+    background-image: linear-gradient(lightgrey,white,grey,.5);
+    font-size: x-large;
+	font-family: Verdana, Arial, sans-serif;
+    font-style:italic;
+    font-weight: bolder;
+    -webkit-animation-name: text-animation;
+    animation-name: text-animation;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+/* Style rules for nav area */
+nav {
+
+	padding: 0.5%;
+}
+
+nav li {
+	display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    position:relative;
+}
+
+nav li a {
+	color: lightgray;
+	padding: 1% 3%;
+	text-decoration: none;
+    display:flex;
+}
+nav li a:hover {
+    color:black;
+}
+.active {
+    color: orange;
+}
+.logo {
+    color: orange;
+    font-size: xx-large;
+    display:block;
+    font-style:italic;
+    font-weight: bolder;
+    box-shadow:2px 2px 2px 2px lightgray;
+    margin:20px;
+}
+.box {
+     height: 50px;
+     width: 150px;
+     background-color: orange;
+     margin:5px;
+}

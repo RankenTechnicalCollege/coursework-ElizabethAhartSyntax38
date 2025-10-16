@@ -3,7 +3,7 @@
     File Name: script.js
     Date: 9/27/25
 */
-
+ var p= document.getElementById("main");
 $(document).ready(function() {
     $('p').hide();
 });
