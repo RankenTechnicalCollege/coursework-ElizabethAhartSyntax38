@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="scripts/scripts.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="icon" href="images/brclogo.jpg" sizes="192 x 192">
+    <link rel="icon" href="images/brclogo.jpg">
   </head>
   <body>
     <header class="header-area hearder-sticky px-3">
@@ -32,6 +32,8 @@
     <div class="main-banner" id="top">
         <video autoplay loop id="bg-video">
             <source src="media/brcvid.mp4" type="Video/mp4">
+            <track src="scripts/captions.vtt" kind="captions" srclang="en" label="English">
+            <track src="scripts/descriptions.vtt" kind="descriptions" srclang="en" label="English">
         </video>
         <div class="jumbotron header-text responsive">
             <div class="caption">
@@ -41,28 +43,150 @@
                     <a href="http://runsignup.com/club/join/1858" target="_blank">Join or Renew your BRC Membership</a>
                     <br>
                     <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club">Buy Brc Gear</a>
-                    <h3>Membership Benefits include</h3>
-                    <ol>
-                        <li></li>
+                    <h3>Membership Benefits include:</h3>
+                    <ol class="link">
+                        <li>Discount on Regional races, On Brc Gear, and at sports-related retailers</li>
+                        <li>RRCA Membership and RRCA Footnote Publication</li>
+                        <li>Group Runs and Training Runs</li>
+                        <li>Access to Training Partners of all abilities</li>
+                        <li>Year round Social Activities</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
+    <!--End Jumbotron Banner-->
+    <section class="Section" id="features">
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-heading">
+                            <h1 class="active">Weekly Group RUNs</h1>
+                            <h1>We meet twice per week on Thursday evenings and Saturday Mornings</h1>
+                        </div>
+                        <ol>
+                            <li><a class="link bg-primary" href="https://www.strava.com/routes/793981" target="_blank">Learn Our 5mile Route</a></li>
+                            <li><a class="link bg-primary" href="https://www.mapmyrun.com/routes/view/10951380" target="_blank">Learn our 3 mile Route</a></li>
+                        </ol>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.8209924464286!2d-89.98519492422882!3d38.51483917180829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88760292e9a0c9c9%3A0x34b29d1651975407!2sBREDE%20-%20TOWER%20APARTMENTS%20NORTH%2C%20100%20N%20High%20St%2C%20Belleville%2C%20IL%2062220!5e0!3m2!1sen!2sus!4v1760631330136!5m2!1sen!2sus" title="N-High" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="d-flex justify content-around">
+                            <div class="col">
+                                <h4>Thursday Evenings at 6pm CST-3 &amp; 5 mile options</h4>
+                                <p>Parking lot os Casa Maria Mexican Restaurant
+                                <br>
+                                <em>100 N Hight St, Belleville, IL 62220</em></p>
+                            <div class="col">
+                                <h4>SATURDAY mornings at 8AM CST-3 &amp; 5 mile options</h4>
+                                <p><a href="https://www.longstorycoffee.com/" target="_blank">LongStory Coffee</a> 732 S Illinois St, Belleville, IL 62220</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Feature items end-->
+    <section class="section responsive" id="call-to-action">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-lg-10 mb-5">
+                    <div class="cta-content">
+                        <h2>Spring 2025 Couch 2<em>5k Training</em></h2>
+                        <img class="rotate" src="images/line-dec.png" alt="waves">
+                        <ol>
+                            <li>Start date of Febuary 18th 2025</li>
+                            <li>Train Individuals to complete the<a href="http://www.lawdayrun.com" target="_blank">Law Day Run</a> In BELLEVILLE, IL</li>
+                            <li>Tuesday at 6.pm Belleville East High-school</li>
+                            <li>Sundays 10:30 am at SouthSide Park</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="features-item">
+                        <li class="feature-item">
+                            <div class="right-content">
+                                <h4>Tier-1  &#36;20</h4>
+                                <ul>
+                                    <li>Weekly Group Training</li>
+                                    <li>C25K Completion T-shirt</li>
+                                </ul>
+                                <div class="main-button scroll-to-section mt-3">
+                                    <a href="https://square.link/u/6qMNTcN6" target="_blank">Buy Tier-1</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="features-item">
+                        <li class="features-item">
+                            <div class="right-content">
+                                <h4>Tier-2 &#36; 30</h4>
+                                <ul>
+                                    <li>1 year Belleville club Membership</li>
+                                    <li>Weekly Group Training</li>
+                                    <li>C25k Completion T-shirt</li>
+                                </ul>
+                                <div class="main-button scroll-to-section mt-3">
+                                    <a href="https://square.link/u/KPGh3iJK" target="_blank">Buy Tier-2</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="features-item">
+                        <li class="feature-item">
+                            <div class="right-content">
+                                <h4>Tier-3 &#36; 55</h4>
+                                <ul>
+                                    <li>2025 Law Day 5k Race</li>
+                                    <li>1 year Belleville club Membership</li>
+                                    <li>Weekly Group Training</li>
+                                    <li>C25k Completion T-shirt</li>
+                                </ul>
+                                <div class="main-button scroll-to-section mt-3">
+                                    <a href="https://square.link/u/KPGh3iJK" target="_blank">Buy Tier-2</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="features-item">
+                        <li class="feature-item">
+                            <div class="right-content">
+                                <h4>Tier-4 &#36; 75</h4>
+                                <ul>
+                                    <li>Personalized Traing Plan</li>
+                                    <li>2025 Law Day 5K Race Entry</li>
+                                    <li>1 year Belleville Running Club Membership</li>
+                                    <li>Weekly Group Training Session</li>
+                                    <li>C25k Completion T-shirt</li>
+                                </ul>
+                                 <div class="main-button scroll-to-section mt-3">
+                                    <a href="https://square.link/u/KPGh3iJK" target="_blank">Buy Tier-2</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+     <footer class="container footer text-center p-5 active responsive">
+            <div class="text-center text-white row">
+              <div class="col-sm-4">
+                <p>&copy; copyright Elizabeth Ahart 2025
+                <a href="inedex.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                      </svg>Apple-ICON</a></p>
+              </div>
+                 <p><a href="mailto:lizplusone@yahoo.com">Contact-Us</a></p>
+            </div>
+        </footer>
 
 
 
