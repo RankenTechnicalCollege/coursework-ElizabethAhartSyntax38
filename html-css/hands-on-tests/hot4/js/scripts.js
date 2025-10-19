@@ -7,12 +7,13 @@ $(document).ready();
 
 
 function discount(){
-    var promo = document.getElementById("special");
+    var promo = document.getElementById("special")
     promo.style.display="block";
 }
 function close(){
     var pizza = document.getElementsByClassName("modal-text")
-    pizza.style.display="none";
+   // pizza.style.display="none";
+   document.write("thanks for your feedback")
 }
 
 var figElement = document.getElementById("placeholder")

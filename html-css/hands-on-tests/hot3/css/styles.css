@@ -190,6 +190,10 @@ header{
     padding: 50%;
     position: relative;
 }
+.card5 {
+    border: #123456 2px dotted;
+    background-image: linear-gradient(white,seagreen,grey);
+}
 .cardtitle {
     font-size: xx-large;
     font-weight: bolder;
