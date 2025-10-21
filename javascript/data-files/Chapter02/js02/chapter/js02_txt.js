@@ -4,8 +4,8 @@
 
       Fan Trick Fine Art Photography
       Variables and functions
-      Author: 
-      Date:   
+      Author: Elizabeth Ahart
+      Date:   10-20-25
 
       Filename: js02.js
  */
