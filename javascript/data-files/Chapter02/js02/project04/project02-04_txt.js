@@ -3,8 +3,8 @@
       Project 02-04
 
       Application to calculate the cost of a restaurant order plus tax
-      Author: 
-      Date:   
+      Author: Elizabeth Ahart
+      Date:   10-23-25
 
       Filename: project02-04.js
  */

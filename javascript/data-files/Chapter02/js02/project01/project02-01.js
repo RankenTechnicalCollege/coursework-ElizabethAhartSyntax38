@@ -8,30 +8,28 @@
 
       Filename: project02-01.js
  */
+window.addEventListener("load",fahrenheitToCelsius);
+window.addEventListener("load",celsiusToFahrenheit);
 
 function fahrenheitToCelsius(degree) {
-    let fDegree = (degree - 32)/1.8
-    return fDegree;
+    let degree = 0;
+    let celsius = (degree - 32)/1.8;
+    return celsius;
 }
 
 
 function celsiusToFahrenheit(degree) {
-    let cDegree = (degree *1.8) + 32;
-    return cDegree;
+    let degree=0;
+    let Fahrenheit = (degree * 1.8) - 32;
+    return Fahrenheit;
 
 }
 
-document.getElementById("cValue").onchange = {
-    function () {
-        cDegree = document.getElementById("cValue");
-       fahrenheitToCelsius(cDegree) = document.getElementById("fvalue");
-    }
-  
+document.getElementById("cValue").onchange =function() {
+    let cDegree = document.getElementById("cValue").value=value;
+    document.getElementById("fValue") = celsiusToFahrenheit(cDegree);
 }
-    document.getElementById("fValue").onchange = {
-        function () {
-            fDegree = document.getElementById("fValue");
-            celsiusToFahrenheit(fDegree) = document.getElementById("cvalue");
-        }
-
+document.getElementById("fvalue").onchange=function() {
+    let fDegree =document.getElementById("fValue").value=value;
+    document.getElementById("cValue") = fahrenheitToCelsius(fDegree);
 }
