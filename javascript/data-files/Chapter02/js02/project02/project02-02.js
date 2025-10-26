@@ -15,7 +15,7 @@ function verifyForm() {
     let email = document.getElementById("email").value != "";
     let phone = document.getElementById("phone").value != "";
 
-    let truthy =(name =="" && email =="" ||( phone =="" ) )? window.alert("all fields required"):window.alert("ThankYou") 
+    let truthy =(name =="" || email =="" || phone =="" )? window.alert("all fields required"):window.alert("ThankYou") 
 
     return truthy; 
  

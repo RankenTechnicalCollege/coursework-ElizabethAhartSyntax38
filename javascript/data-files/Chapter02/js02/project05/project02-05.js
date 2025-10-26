@@ -4,7 +4,7 @@
 
       Application to create an online calculator
       Author: Elizabeth Ahart
-      Date:   10-23-25
+      Date:   10-26-25
 
       Filename: project02-05.js
  */
@@ -88,7 +88,7 @@ function runCalculator(character) {
    let calcValue = document.getElementById("calcWindow").value;
    
    // Add the character to the calculator string or if its empty (the enter key) evaluate the equation
-     (character) ? calcValue = character : calcValue += " = " + evalEq(calcValue) + "\n";
+      calcValue =(character) ? character : calcValue += " = " + evalEq(calcValue) + "\n";
    
    // Update the characters displayed in the calculator window.
    document.getElementById("calcWindow").value = calc_value;
