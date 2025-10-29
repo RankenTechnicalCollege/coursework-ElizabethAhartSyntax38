@@ -4,8 +4,8 @@
 
      Tipton Turbines
      Program to display games results in a web table
-     Author: 
-     Date:   
+     Author: Elizabeth Ahart
+     Date: 10-28-25  
 
      Filename: js03.js
  */
