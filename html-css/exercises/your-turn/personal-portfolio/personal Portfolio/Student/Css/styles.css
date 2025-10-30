@@ -18,6 +18,10 @@ table {
   border-collapse: collapse;
   margin-right: 5%;
   background-color: lightsalmon;
+    display: block;
+
+
+
 }
 /*original nav hidden on sponsor page*/
 .d-none {
@@ -50,7 +54,9 @@ ol li {
 ol li:hover{
   color: #333;
 }
-  
+  * {
+    box-sizing: border-box;
+  }
 
 /*Style rules for mobile viewport*/
 .mobile {
@@ -101,6 +107,12 @@ header {
     color: black;
     text-align: center;
     font-family: 'Agbalumo';font-size: 22px;
+      -webkit-animation-name: text-animation;
+  animation-name: text-animation;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
 }
 /*added styles to section headers*/
 section {
@@ -116,7 +128,15 @@ section h2 {
 figcaption {
   display: block;
   text-shadow: 2px 2px #2a2a97;
-  font-size: x-large;
+  font-size: xx-large;
+ /* -webkit-animation-name: text-animation;
+  animation-name: text-animation;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;*/
+  height: 20vh;
+
 
 }
 
@@ -204,6 +224,16 @@ h2 #joy,#hearts,#circles {
 }
 table {
   display:block;
+}
+@-webkit-keyframes text-animation {
+  0%{font-size: 1em;}
+  50%{font-size: 2em;}
+  100%{font-size: 1.35 em;}
+}
+@keyframes text-animation {
+    0%{font-size: 1em;}
+  50%{font-size: 2em;}
+  100%{font-size: 1.35 em;}
 }
 /*styles for viewport tab-desk*/
 
