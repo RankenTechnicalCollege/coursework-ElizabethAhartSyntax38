@@ -14,9 +14,44 @@ header,main,nav,body,footer,figure,figcaption,section {
   display:block;
 }
 table {
-  border: 2px;
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-right: 5%;
+  background-color: lightsalmon;
+}
+/*original nav hidden on sponsor page*/
+.d-none {
+  display: none;
+}
+/*table design on sponsor page*/
+td {
+  border: 2px solid black;
   border-collapse: collapse;
 }
+th {
+  background-color: lightblue;
+}
+span {
+  color: purple;
+  box-shadow: 2px 2px 2px black;
+}
+.one {
+  color: green;
+}
+.two {
+  color: blue;
+}
+.three {
+  color: #653939;
+}
+ol li {
+  list-style: square;
+}
+ol li:hover{
+  color: #333;
+}
+  
+
 /*Style rules for mobile viewport*/
 .mobile {
     display: block;
@@ -80,7 +115,9 @@ section h2 {
 }
 figcaption {
   display: block;
-  text-shadow: 2px 2px #292933;
+  text-shadow: 2px 2px #2a2a97;
+  font-size: x-large;
+
 }
 
 /* Add a black background color to the top navigation */
