@@ -26,3 +26,10 @@ captions[12]="The International Space Station third expansion [2007]";
 captions[13]="The ISS over the Ionian Sea [2007]";
 
 
+let i="";
+for(let i=0;i <captions.length;i++){
+    i += <figure><img alt='' src='slidei.jpg' />
+    <figcaption>caption[i]</figcaption>
+    </figure>
+    document.getElementById("gallery").innerHTML= i;
+}

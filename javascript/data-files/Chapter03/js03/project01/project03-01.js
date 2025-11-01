@@ -9,21 +9,44 @@
       Filename: project03-01.js
 */
 
-let menuItems = document.getElementsByClassName("menuItem").length;
-for( let i=0;i<menuItems.length;i++){
-    document.getElementById("menuItems[i]").addEventListener("click",calcTotal);
+ let menuItems = document.getElementsByClassName("menuItem").value=value;
+
+for ( let i=0;i<menuItems.length;i++) {
+    menuItems[i].addEventListener("click",calcTotal);
 }
 
 
-function calcTotal(){
-    let orderTotal=0;
-    for( let i=0;i<menuItems.length;i++){
-        if(menuItem[i].checked===true)
-        orderTotal+= menuItem[i];
+function calcTotal() {
+    let orderTotal= 0;
+    for( let i =0 ; i  <menuItems.length;i++) {
+        if(document.getElementsByClassName("menuItem")[0].checked===true) {
+            orderTotal += Number(menuItems[i].value);
+            if(document.getElementsByClassName("menuItem")[1].checked===true) {
+                orderTotal += Number(menuItems[i].value);
+            
+            }
+            if (document.getElementsByClassName("menuItem")[2].checked===true){
+                orderTotal += Number(menuItems[i].value);
+
+            }
+            if(document.getElementsByClassName("menuItem")[3].checked===true){
+                orderTotal += Number(menuItems[i].value);
+
+            }
+            if(document.getElementsByClassName("menuItem")[4].checked===true){
+                orderTotal += Number(menuItems[i].value);
+            }
+            if(document.getElementsByClassName("menuItem")[5].checked===true){
+                orderTotal += Number(menuItems[i].value);
+            }
+
+        }
+                   
+            document.getElementById("billTotal").innerHTML=formatCurrency(orderTotal); 
     }
 
 }
-document.getElementById("billTotal").innerHTML=formatCurrency(orderTotal);
+
 
 
 

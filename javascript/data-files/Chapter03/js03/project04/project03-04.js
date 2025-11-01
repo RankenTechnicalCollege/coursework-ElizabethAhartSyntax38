@@ -21,3 +21,25 @@ let reviews = [
 ];
 let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with Poor Tech Support", "Nice Improvement"];
 
+
+function starImages(rating){
+    let imageText="";
+    for(let i=1;i<=rating.length;i++){
+        imageText+="<img src='star.png' alt=>";
+    }
+    document.write(imageText);
+    for(let j =0;j<reviewers.length;j++){
+        let reviewCode="";
+        if(reviewType==="P"){
+            reviewCode+="<table class ='prime'>"
+        }else if(reviewCode==="N"){
+            reviewCode+="<table class='new'>"
+        }else{
+            reviewCode +="<table>"
+        }
+        reviewCode+="<caption>reviewTitles[i]</caption>"+
+        "<tr><th>By</th><td>reviewers[i]</td></tr>"+"<tr><th>Review Date </th></td>ReviewDates[i]</td></tr>"+"<tr><td colspan='2'>reviews[i]</td></tr></table>";
+    }
+    document.getElementsByTagName("article").insertAdjacentHTML("beforeend",reviewCode);
+}
+

@@ -58,3 +58,13 @@ links[8] = "https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt";
 links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 
 
+let i="";
+for(let i=0;i<titles.length;i++){
+    i += <tr>
+        <td><a href='links[i]'>titles[i]</a></td>
+        <td>summaries[i]</td>
+        <td>ratings[i]</td>"
+    </tr>
+}
+let tableBody=document.getElementsByTagName("tbody")[0];
+tableBody[i].innerHtml=htmlCode;
