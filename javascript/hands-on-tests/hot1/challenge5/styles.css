@@ -1,0 +1,20 @@
+/*Elizabeth Ahart 
+11-2-25
+hot1 challenge 5*/
+/*Elizabeth Ahart 
+11-1-25
+Hot1 challenge 2*/
+
+
+header, footer,body, nav,main{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+main {
+    background-color: lightblue;
+    color:black;
+    font-size: xx-large;
+    text-shadow:2px 2px 2px lightblue;
+}

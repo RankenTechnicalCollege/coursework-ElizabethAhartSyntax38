@@ -1,0 +1,24 @@
+/*Elizabeth Ahart 
+11-2-2025
+Hot 1*/
+
+header, footer,body nav{
+    margin:0;
+    padding:0;
+    border:0;
+}
+header {
+    text-align: center;
+    text-shadow:2px 2px 2px black
+}
+form {
+    flex-direction: column-reverse;
+    position:relative;
+    background-color: lightgreen;
+    max-width: 100%;
+}
+figcaption {
+    font-size: xx-large;
+    color:blueviolet;
+    box-shadow:2px 2px 2px gray;
+}
