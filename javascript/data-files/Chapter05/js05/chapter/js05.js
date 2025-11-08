@@ -12,7 +12,7 @@
 window.addEventListener("load", createLightbox);
 function createLightbox(){
    //Lightbox container
-   let lightBox = document.getElementById("lightBox");
+   let lightBox = document.getElementById("lightbox");
 
    //parts of the lightbox
    let lbTitle = document.createElement("h1");
@@ -25,18 +25,24 @@ function createLightbox(){
    //Design the lightbox title
    lightBox.appendChild(lbTitle);
    lbTitle.id="lbTitle";
+   lbTitle.textContent=lightboxTitle;
    //design the slide counter
    lightBox.appendChild(lbCounter);
    lbCounter.id="lbCounter"
+   let currentImg=1
+   lbCounter.textContent=currentImg+"/" +imgCount;
    //design the lightbox prev slide button
    lightBox.appendChild(lbPrev);
    lbPrev.id+"lbPrev";
+   lbPrev.innerHTML="&#9664;";
    //design the lightbox next button
    lightBox.appendChild(lbNext);
    lbNext.id="lbNext";
+   lbNext.innerHTML="&#9654";
    //design the light hous play pause button
    lightBox.appendChild(lbPlay);
    lbPlay.id="lbPlay"
+   lbPlay.innerHTML="&#9199";
    //design the lightbox images container
    lightBox.appendChild(lbImages);
    lbImages.id="lbImages";
