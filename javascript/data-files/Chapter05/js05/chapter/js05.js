@@ -29,31 +29,93 @@ function createLightbox(){
    //design the slide counter
    lightBox.appendChild(lbCounter);
    lbCounter.id="lbCounter"
-   let currentImg=1
+   let currentImg=1;
    lbCounter.textContent=currentImg+"/" +imgCount;
+
+   
    //design the lightbox prev slide button
    lightBox.appendChild(lbPrev);
-   lbPrev.id+"lbPrev";
-   lbPrev.innerHTML="&#9664;";
+   lbPrev.id ="lbPrev";
+   lbPrev.innerHTML="&#9664";
+   lbPrev.onclick=showPrev;
    //design the lightbox next button
    lightBox.appendChild(lbNext);
    lbNext.id="lbNext";
    lbNext.innerHTML="&#9654";
-   //design the light hous play pause button
+   lbNext.onclick=showNext;
+   //design the lightbox play pause button
    lightBox.appendChild(lbPlay);
    lbPlay.id="lbPlay"
    lbPlay.innerHTML="&#9199";
-   //design the lightbox images container
-   lightBox.appendChild(lbImages);
+      //add images from the imgFiles array to the container
+
+   let timeID;
+   lbPlay.onclick = function(){
+      if(timeID){
+         //stop slideshow
+         window.clearInterval(timeID);
+         timeID=undefined;
+      }else {
+         //start the slideshow
+         showNext();
+         timeID= window.setInterval(showNext,1500);
+      }
+
+     
+   }
+
+      lightBox.appendChild(lbImages);
    lbImages.id="lbImages";
 
-   //add images from the imgFiles array to the container
-   for(let i=0;i<imgCount;i++){
+      for(let i=0;i<imgCount;i++){
       let image =document.createElement("img");
        image.src=imgFiles[i];
        image.alt=imgCaptions[i];
+       image.onclick=createOverlay;
        lbImages.appendChild(image);
    }
+
+
+
+   //function to move forward through the image list
+   function showNext(){
+      lbImages.appendChild(lbImages.firstElementChild);
+      (currentImg<imgCount) ? currentImg ++ : currentImg=1;
+      lbCounter.textContent= currentImg + "/" + imgCount;
+   }
+   //function to move backward through the image list
+   function showPrev(){
+
+      lbImages.insertBefore(lbImages.lastElementChild,lbImages.firstElementChild);
+      (currentImg>1) ? currentImg-- : currentImg=imgCount;
+      lbCounter.textContent= currentImg +"/"+ imgCount;
+   }
+
+    function createOverlay(){
+         let overlay=document.createElement("div");
+         overlay.id="lbOverlay";
+         //add the figurebox to the overlay
+         let figureBox=document.createElement("figure");
+         overlay.appendChild(figureBox);
+         //add the image to the figurebox 
+         let overlayImage=this.cloneNode("true");
+         figureBox.appendChild(overlayImage);
+         //add the caption to the figure box
+         let overlayCaption=document.createElement("figCaption");
+         overlayCaption.textContent=this.alt;
+         figureBox.appendChild(overlayCaption);
+         //add close button
+         let closeBox=document.createElement("div");
+         closeBox.id="lbOverlayClose";
+         closeBox.innerHTML="&times"
+         closeBox.onclick=function(){
+            document.body.removeChild(overlay);
+         }
+         overlay.appendChild(closeBox);
+         document.body.appendChild(overlay);
+
+      }
+
 }
 
 window.addEventListener("load", setupGallery);
