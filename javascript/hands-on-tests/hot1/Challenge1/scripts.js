@@ -5,6 +5,11 @@
 window.addEventListener("submit",firstName);
 function firstName(){
     
-let firstNames= document.getElementsByName("fName")[0].onsubmit;
-    window.alert("your Name is "+firstNames);
+let firstNames= document.getElementsByName("fName")[0];
+try{
+    if (!(firstName >"")) throw window.alert(firstName);
+}catch (err){
+    window.alert("warning");
+}
+    window.alert("your Name is "+ firstNames);
 }
