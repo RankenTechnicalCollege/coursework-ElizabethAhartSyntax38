@@ -4,8 +4,8 @@
       Project 05-02
 
       Project to move images between a photo bucket and photo list.
-      Author: 
-      Date:   
+      Author: Elizabeth Ahart
+      Date:   11-7-25
 
       Filename: project05-02.js
 */

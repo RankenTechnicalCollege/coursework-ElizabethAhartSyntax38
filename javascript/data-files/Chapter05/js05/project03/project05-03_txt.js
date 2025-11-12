@@ -4,8 +4,8 @@
       Project 05-03
 
       Project to create a table of headings from an article
-      Author: 
-      Date:   
+      Author: Elizabeth Ahart
+      Date:   11-11-25
 
       Filename: project05-03.js
 */

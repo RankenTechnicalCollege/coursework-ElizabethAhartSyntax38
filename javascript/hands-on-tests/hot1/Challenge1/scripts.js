@@ -5,9 +5,10 @@
 window.addEventListener("submit",firstName);
 function firstName(){
     
-let firstNames= document.getElementsByName("fName")[0];
+let firstNames= document.getElementsByName("fName")[0].onsubmit(firstNames);
+
 try{
-    if (!(firstName >"")) throw window.alert(firstName);
+    if (!(firstNames >"")) throw window.alert(firstNames).toString;
 }catch (err){
     window.alert("warning");
 }
