@@ -4,8 +4,8 @@
       Chapter case
 
       Order Form Code
-      Author: 
-      Date:   
+      Author: Elizabeth Ahart
+      Date:   11*12-25
 
       Filename: js06a.js
  */
