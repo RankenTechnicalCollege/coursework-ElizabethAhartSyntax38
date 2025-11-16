@@ -4,7 +4,7 @@
       Project 06-03
 
       Script to complete a form containing billing and shipping address information
-      Author: 
+      Author: Elizabeth Ahart
       Date:   
 
       Filename: project06-03.js
