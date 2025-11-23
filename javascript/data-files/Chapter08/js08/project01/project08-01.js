@@ -12,6 +12,15 @@
 
 /*--------------- Object Code --------------------*/
 
+function timer(min , sec){
+    this.timer.minutes= min;
+    this.timer.seconds= sec;
+    this.timer.timeId=null;
+}
+timer.prototype.runPause(timer,minBox,secBox)= function(){
+
+}
+
 
 
 

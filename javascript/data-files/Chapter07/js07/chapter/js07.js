@@ -9,7 +9,85 @@
 
       Filename:       js07.js
  */
+document.getElementById("getFile").onchange=function(){
+      //retrieve information about the selected file
+      let userFile=this.files[0];
 
+
+//verify that the text file is selected
+try {
+      let isText=userFile.type.startsWith("text");
+      if (! isText){
+            throw userFile.name +"is not a text file";
+      }
+
+
+// reads contents of selected file 
+let fr=new FileReader();
+fr.readAsText(userFile);
+
+
+//once file has finished loading display in page
+let sourceDoc=document.getElementById("wc_document");
+fr.onload=function(){
+      sourceDoc.innerHTML=fr.result;
+
+      //store the text of the document, removing html tags
+      let sourceText=sourceDoc.textContent;
+      wordCloud(sourceText);
+}
+
+}
+catch (err){
+      window.alert("err");
+
+}
+};
+function wordCloud(sourceText){
+      //convert the source text to lowercase
+      //and remove running and trailing whitespace
+      sourceText=sourceText.toLowerCase();
+      sourceText=sourceText.trim();
+      //leave only alphabet characters
+      let alphaRegx=/[^a-zA-Z\s]/g;
+      sourceText=sourceText.replace(alphaRegx,"");
+      //remove stop words from the text
+      for(let i=0;i< stopWords.length;i++){
+            let stopRegx=new RegExp("\\b"+stopWords[i]+"\\b","g");
+            sourceText=sourceText.replace(stopRegx,"");
+      }
+      //place remaining words in array
+      let words=sourceText.split(/\s+/g);
+      words.sort();
+      // create an 2d array in which each item is an array
+      //containing a word and its duplicate count
+      let unique =[[words[0],1]];
+      //keep an index of the unique words
+      let uniqueIndex=0;
+      for(let i=1;i<words.length,i++;){
+            if (words[i] === words[i-1]){
+                  //increase the duplicate count by one
+                  unique[uniqueIndex][1]++;
+            }else {
+                  //add a new word to the unique array
+                  uniqueIndex++;
+                  unique[uniqueIndex]=[words[i],1];
+            }
+      }
+
+      //sort by descending order of duplicate count
+      unique.sort(byDuplicate);
+      function byDuplicate(a,b){
+
+            return b[1]-a[1];
+      }
+
+
+
+
+
+     
+}
 
 
 
