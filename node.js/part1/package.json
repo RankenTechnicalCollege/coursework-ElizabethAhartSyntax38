@@ -1,0 +1,12 @@
+{
+  "name": "part1",
+  "version": "1.0.0",
+  "description": "part 1",
+  "license": "MIT",
+  "author": "Elizabeth Ahart",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
