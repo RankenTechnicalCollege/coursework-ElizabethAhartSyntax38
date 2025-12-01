@@ -11,10 +11,26 @@
 */
 
 /*---------------- Object Code ----------------------*/
+let cart={
+    items:[],
+   addItem:this.addItem.push(foodItem)
+};
+function Pizza(){
+   this.size;
+   this.crust;
+   this.toppings=[];
 
-
-
-
+}
+function Toppings(){
+    this.name;
+    this.side;
+}
+Pizza.prototype.addToCart(
+    cart.items.push(this)
+)
+Pizza.prototype.summarize(
+    this.summary= "Pizza",
+)
 
 
 
