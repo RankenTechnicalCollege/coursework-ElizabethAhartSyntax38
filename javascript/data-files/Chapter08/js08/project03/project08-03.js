@@ -29,8 +29,11 @@ Pizza.prototype.addToCart(
     cart.items.push(this)
 )
 Pizza.prototype.summarize(
-    this.summary= "Pizza",
+    this.summary= "Pizza:"+ (this.size.value, this.crust.value)
 )
+for(let i=0;i<this.toppings.length,i++;){
+ this.summary+"(side)";
+}
 
 
 
@@ -97,11 +100,26 @@ function drawPizza() {
 function buildPizza() {
    let checkedToppings = document.querySelectorAll("input.topping:checked"); 
 
+let myPizza= new Pizza()
+myPizza.size= pizzaSizeBox.value;
+myPizza.crust= pizzaCrustBox.value;
+for(let i=0;i<checkedToppings.length,i++;){
+   myTopping= new Toppings();
+   myTopping.name= checkedToppings[i].name;
+   myTopping.side= checkedToppings[i],value;
+  myPizza.addTopping(myTopping);
+}
+return myPizza.value;
 
 }    
 
 // Function to add the built pizza to the shopping cart
 function updateCart() {
-
-
+myPizza+= buildPizza();
+addItem(myPizza);
 }  
+console.log(cart);
+summarize.myPizza=document.createElement("p");
+cartBox.appendChild(summarize.myPizza);
+clearPizzaImage();
+clearToppings();

@@ -24,7 +24,8 @@ getFileButton.onchange = function() {
 
    // Once the file has finished loading, parse the JSON file
    fr.onload=function(){ 
-
+    let staff=JSON.parse(Jsontxt);
+    makeStaffTable();
    }
    
 };
@@ -32,6 +33,24 @@ getFileButton.onchange = function() {
 function makeStaffTable(staff) {
    let staffTable = document.createElement("table");
    let headerRow = document.createElement("tr");
-   
+   let name=document.createElement("tr");
+   for(let name in staff.directory[0]){
+    let headerCell=document.createElement("th");
+    let prop=headerCell.textContent;
+    headerRow.appendChild(headerCell);
+
+   }
+   staffTable.appendChild(headerRow);
+   for(let i=0;i<staff.Directory.length,i++;){
+    let tableRow=document.createElement("tr");
+    for(let prop in staff.directory[i]){
+        let tableCell=document.createElement("td");
+        tableCell.textContent=staff.directory[i][prop].value;
+        tableRow.appendChild(tableCell);
+        staffTable.appendChild(tableRow);
+    }
+        containerBox.appendChild(staffTable);
+
+   }
 
 }
