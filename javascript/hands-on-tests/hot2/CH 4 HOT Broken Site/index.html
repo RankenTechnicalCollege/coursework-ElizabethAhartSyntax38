@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+      JavaScript
+
+      Author: Elizabeth Ahart
+      Date:   12-1-25
+
+      Filename: index.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Hands-on Project 7-3</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Test Chapter 4
+      </h1>
+   </header>
+
+   <article>
+      <h2>Steam Game Sale</h2>
+      <form>
+         <input type="checkbox" id="item1" value="1999" />
+         <label for="item1">Counter Strike ($19.99)</label>
+         <input type="checkbox" id="item2" value="2999" />
+         <label for="item2">Dark Souls III ($29.99)</label>
+         <input type="checkbox" id="item3" value="1349" />
+         <label for="item3">Enter The Gungeon ($13.49)</label>
+         <input type="checkbox" id="item4" value="499" />
+         <label for="item4">Hover Junkers ($4.99)</label>
+         <input type="checkbox" id="item5" value="599" />
+         <label for="item5">Good Robot ($8.99)</label>
+         <input type="button" onclick="calcTotal()" value="Calculate" id="sButton" />
+      </form>
+      
+      <table>
+         <colgroup>
+            <col class="label" />
+            <col class="amount" />
+         </colgroup>
+         <tbody>
+            <tr>
+               <td>Item total</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Tax</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Total with tax</td>
+               <td>$0.00</td>
+            </tr>
+         </tbody>
+      </table>
+   </article>
+   <script>
+      "use strict";
+      // function to add values of selected check boxes and display total
+      function calcTotal() {
+
+         let itemTotal = 0;
+         let tax = 0;
+         let totalWithTax = 0;
+         let items = document.getElementsByTagName("input");
+         let cells = document.getElementsByTagName("td");
+         //logic error there are more then 3 checkboxes to cycle through
+         for (let i = 0; i < 10; i++) {
+            if (items[0].checked) {
+               //take out the 1 value*1
+               itemTotal += (items[0].value*1);
+            }else if(items[1].checked===true){
+                itemTotal += (items[1].value*1);
+            }else if (items[2].checked===true){
+                itemTotal += (items[2].value*1);
+            }else if(items[3].checked===true){
+                itemTotal += (items[3].value*1);
+            }else if(items[4].checked===true){
+                itemTotal += (items[4].value*1);
+            }else{
+                itemTotal += (items[5].value*1);
+            }
+         }
+         tax = itemTotal * 0.05;
+         //logic error taxtotal use not declared 2
+         totalWithTax = itemTotal + tax;
+         cells[1].innerHTML = (itemTotal/1000).toFixed(2);
+         cells[3].innerHTML = (tax/1000).toFixed(2);
+         cells[5].innerHTML = "$" + (totalWithTax/1000).toFixed(2);
+      }
+
+      // add event listener to Submit button
+      let submitButton = document.getElementById("sButton");
+      //missing quote 1
+      submitButton.addEventListener("click", calcTotal); 
+      let date1= new Date("sun,Nov 16,2025");
+      date1.textContent=document.createElement("div")
+      document.getElementsByTagName("body").appendchild(date1);
+
+   </script>
+</body>
+
+</html>

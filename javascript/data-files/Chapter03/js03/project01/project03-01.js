@@ -9,7 +9,7 @@
       Filename: project03-01.js
 */
 
- let menuItems = document.getElementsByClassName("menuItem").value=value;
+ let menuItems = document.getElementsByClassName("menuItem");
 
 for ( let i=0;i<menuItems.length;i++) {
     menuItems[i].addEventListener("click",calcTotal);
@@ -20,24 +20,24 @@ function calcTotal() {
     let orderTotal= 0;
     for( let i =0 ; i  <menuItems.length;i++) {
         if(document.getElementsByClassName("menuItem")[0].checked===true) {
-            orderTotal += Number(menuItems[i].value);
+            orderTotal += (menuItems[i].value);
             if(document.getElementsByClassName("menuItem")[1].checked===true) {
-                orderTotal += Number(menuItems[i].value);
+                orderTotal += (menuItems[i].value);
             
             }
             if (document.getElementsByClassName("menuItem")[2].checked===true){
-                orderTotal += Number(menuItems[i].value);
+                orderTotal += (menuItems[i].value);
 
             }
             if(document.getElementsByClassName("menuItem")[3].checked===true){
-                orderTotal += Number(menuItems[i].value);
+                orderTotal += (menuItems[i].value);
 
             }
             if(document.getElementsByClassName("menuItem")[4].checked===true){
-                orderTotal += Number(menuItems[i].value);
+                orderTotal += (menuItems[i].value);
             }
             if(document.getElementsByClassName("menuItem")[5].checked===true){
-                orderTotal += Number(menuItems[i].value);
+                orderTotal += (menuItems[i].value);
             }
 
         }
