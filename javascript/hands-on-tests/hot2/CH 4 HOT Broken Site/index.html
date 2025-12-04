@@ -35,7 +35,7 @@
          <label for="item3">Enter The Gungeon ($13.49)</label>
          <input type="checkbox" id="item4" value="499" />
          <label for="item4">Hover Junkers ($4.99)</label>
-         <input type="checkbox" id="item5" value="599" />
+         <input type="checkbox" id="item5" value="899" />
          <label for="item5">Good Robot ($8.99)</label>
          <input type="button" onclick="calcTotal()" value="Calculate" id="sButton" />
       </form>
@@ -73,35 +73,42 @@
          let cells = document.getElementsByTagName("td");
          //logic error there are more then 3 checkboxes to cycle through
          for (let i = 0; i < 10; i++) {
-            if (items[0].checked) {
+            if (items[0].checked===true) {
                //take out the 1 value*1
                itemTotal += (items[0].value*1);
             }else if(items[1].checked===true){
-                itemTotal += (items[1].value*1);
+                itemTotal +=(items[1].value*1);
             }else if (items[2].checked===true){
                 itemTotal += (items[2].value*1);
             }else if(items[3].checked===true){
                 itemTotal += (items[3].value*1);
-            }else if(items[4].checked===true){
+            }else if(items[4].checked=true){
                 itemTotal += (items[4].value*1);
-            }else{
+            }else if(items[5].checked===true){
                 itemTotal += (items[5].value*1);
             }
-         }
-         tax = itemTotal * 0.05;
+            }
+         
+   
+         
+         tax = itemTotal * 0.1;
          //logic error taxtotal use not declared 2
          totalWithTax = itemTotal + tax;
          cells[1].innerHTML = (itemTotal/1000).toFixed(2);
          cells[3].innerHTML = (tax/1000).toFixed(2);
          cells[5].innerHTML = "$" + (totalWithTax/1000).toFixed(2);
+         
       }
+      
+     
 
       // add event listener to Submit button
       let submitButton = document.getElementById("sButton");
       //missing quote 1
       submitButton.addEventListener("click", calcTotal); 
+      
       let date1= new Date("sun,Nov 16,2025");
-      date1.textContent=document.createElement("div")
+      date1.textContent.document.createElement("div")
       document.getElementsByTagName("body").appendchild(date1);
 
    </script>
