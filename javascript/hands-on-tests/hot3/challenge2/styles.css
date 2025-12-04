@@ -1,0 +1,67 @@
+/* css reset*/
+main, body, nav, footer, header {
+    margin: 0;
+    border:0;
+    padding: 0;
+
+}
+/*
+ * Custom CSS
+ */
+
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+.form-label {
+position: relative;
+background-color: bisque;
+padding: auto;
+
+}
+.form-control {
+    box-sizing: border-box;
+    box-shadow: 2px, 2px,2px;
+    color:black;
+    font-size: xx-large;
+    padding: auto;
+}
+.add {
+  color: blue;
+  font-style: italic;
+  font-weight: bolder;
+  box-sizing: border-box;
+  box-shadow: 2px, 2px, 2px black;
+  border: 2px, dotted, black;
+     -webkit-animation-name: text-animation;
+    animation-name: text-animation;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+
+.delete{
+ color: blue;
+  box-sizing: border-box;
+  box-shadow: 2px, 2px, 2px black;
+  border: 2px, dotted, black;
+    font-style: italic;
+  font-weight: bolder;
+     -webkit-animation-name: text-animation;
+    animation-name: text-animation;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+@-webkit-keyframes text-animation {
+    0%{font-size: 1em;}
+    50%{font-size: 2em;}
+    100%{font-size: 1.35em;}
+}
+@keyframes text-animation {
+    0%{font-size: 1em;}
+    50%{font-size: 2em;}
+    100%{font-size: 1.35em;}
+}
