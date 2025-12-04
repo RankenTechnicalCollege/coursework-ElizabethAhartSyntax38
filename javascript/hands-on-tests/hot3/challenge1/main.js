@@ -20,9 +20,13 @@
     let email = document.getElementById("email").value != "admin@example.com";
     let passWord = document.getElementById("passWord").value != "admin@example.com";
 
-    let truthy =(name==""|| email =="" || passWord =="" )? window.alert("Success 'Welcome Back Admin' "):window.alert("The Email /or password don't seem to be right ?!") 
+    let truthy =(name==""|| email =="" || passWord =="" )? /*window.alert("Success 'Welcome Back Admin' ")*/document.write("Success 'Welcome Back Admin' "):document.write("You seem to  have forgotten your password Email")/*window.alert("The Email /or password don't seem to be right ?!")*/ 
+    if(name===""||email===""||passWord===""){
+      document.write("You seem to have Forgotten your PassWord")
+    }
 
     return truthy; 
  
 }
+
     document.getElementById("submit").onclick = verifyForm;
