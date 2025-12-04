@@ -2,7 +2,7 @@
 //
 // This includes Popper and all of Bootstrap's JS plugins.
 
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+//import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 
 //
@@ -10,17 +10,17 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 //
 
 // Create an example popover
-document.querySelectorAll('[data-bs-toggle="popover"]')
+/*document.querySelectorAll('[data-bs-toggle="popover"]')
   .forEach(popover => {
     new bootstrap.Popover(popover)
-  })
+  })*/
 
   function verifyForm() {
-   let name = document.getElementById("passWord2").value != "";
-    let email = document.getElementById("email").value != "";
-    let passWord = document.getElementById("passWord").value != "";
+   let name = document.getElementById("passWord2").value != "admin@example.com";
+    let email = document.getElementById("email").value != "admin@example.com";
+    let passWord = document.getElementById("passWord").value != "admin@example.com";
 
-    let truthy =(name=="admin@example.com"|| email =="admin@example.com" || passWord =="admin@example.com" )? window.alert("all fields required"):window.alert("Welcome back admin") 
+    let truthy =(name==""|| email =="" || passWord =="" )? window.alert("Success 'Welcome Back Admin' "):window.alert("The Email /or password don't seem to be right ?!") 
 
     return truthy; 
  
