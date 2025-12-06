@@ -14,7 +14,7 @@
   .forEach(popover => {
     new bootstrap.Popover(popover)
   })*/
- TodoList=new Array[["laundry","Monday"],["Mop","Tuesday"],["billPAY","Thursday"]["Closets,EveryDay"],["Paint","Sunday"]];
+ TodoList[1]=new Array[["laundry","Monday"],["Mop","Tuesday"],["billPAY","Thursday"],["Closets,EveryDay"],["Paint","Sunday"]];
 
   function verifyForm() {
    let name = document.getElementById("name2").value != "";
@@ -22,18 +22,18 @@
     let name2 = document.getElementById("name").value != "";
     let i=0;
 
-    let truthy =(name==""|| expiration =="" || name2 =="" )? /*window.alert("Success 'Welcome Back Admin' ")*/document.write("All fields are required Please Add to the list "):document.write("success Your task is added to "+ TodoList)/*window.alert("The Email /or password don't seem to be right ?!")*/
+    let truthy =(name==""|| expiration =="" || name2 =="" )? /*window.alert("Success 'Welcome Back Admin' ")*//*window.alert("The Email /or password don't seem to be right ?!")*/document.write("All fields are required Please Add to the list "):document.write("success Your task is added to search ")
      for (let i = 0; i < TodoList.Length; i++)
  {
-     if (TodoListList[i].Contains(name))
+     if (TodoList[i].Contains(name))
      {
-         document.write("success Your task is added to "+ TodoList)
+         document.write("success Your task is added to ")
 
          break;
 
      } else
      {
-         document.write("TRY AGAIN"+ TodoList)
+         document.write("TRY AGAIN" );
 
      }
  } 
@@ -43,3 +43,58 @@
 }
 
     document.getElementById("submit").onclick = verifyForm;
+
+      function verifyForm2() {
+   let name = document.getElementById("name7-2").value != "";
+    let expiration = document.getElementById("expiration7").value != "";
+    let name2 = document.getElementById("name7").value != "";
+    let i=0;
+
+    let truthy =(name==""|| expiration =="" || name2 =="" )? /*window.alert("Success 'Welcome Back Admin' ")*//*window.alert("The Email /or password don't seem to be right ?!")*/document.write("All fields are required Please add to the list "):document.write("success Your task is added to Task list for ")
+     for (let i = 0; i < TodoList.Length; i++)
+ {
+     if (TodoList[i].Contains(name))
+     {
+         document.write("success Your task is added to ")
+
+         break;
+
+     } else
+     {
+         document.write("TRY AGAIN" );
+
+     }
+ } 
+  
+    return truthy; 
+ 
+}
+
+    document.getElementById("delete").onclick = verifyForm2;
+          function verifyForm3() {
+   let name = document.getElementById("name8-2").value != "";
+    let expiration = document.getElementById("expiration8").value != "";
+    let name2 = document.getElementById("name8").value != "";
+    let i=0;
+
+    let truthy =(name==""|| expiration =="" || name2 =="" )? /*window.alert("Success 'Welcome Back Admin' ")*//*window.alert("The Email /or password don't seem to be right ?!")*/document.write("All fields are required Please add to the list "):document.write("success Your task is deleted from Task list for ")
+     for (let i = 0; i < TodoList.Length; i++)
+ {
+     if (TodoList[i].Contains(name))
+     {
+         document.write("success Your task is added to ")
+
+         break;
+
+     } else
+     {
+         document.write("TRY AGAIN" );
+
+     }
+ } 
+  
+    return truthy; 
+ 
+}
+
+    document.getElementById("delete").onclick = verifyForm3;

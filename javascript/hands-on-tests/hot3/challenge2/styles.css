@@ -14,8 +14,8 @@ main, body, nav, footer, header {
 }
 .form-label {
 position: relative;
-background-color: bisque;
-padding: auto;
+background-image: linear-gradient(bisque,seagreen,lightblue);
+padding: 15px;
 
 }
 .form-control {
